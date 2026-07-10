@@ -9,13 +9,13 @@
   "downloads": {
     "portable": {
       "label": "绿色便携版（解压即用）",
-      "url": "https://github.com/gehth/henan-dialect-board/releases/download/v20260710/%E6%B2%B3%E5%8D%97%E6%96%B9%E8%A8%80%E8%AF%AD%E9%9F%B3%E6%9D%BF_v20260710.zip",
+      "url": "https://github.com/gehth/henan-dialect-board/releases/download/v20260710/henan-dialect-board_v20260710.zip",
       "size": 525690187,
       "sha256": "166ce4a652c43db9a67433ce8a4675247f042c9ddaa3d5c9a6ccff43bd04513d"
     },
     "installer": {
       "label": "安装包（setup.exe）",
-      "url": "https://github.com/gehth/henan-dialect-board/releases/download/v20260710/%E6%B2%B3%E5%8D%97%E6%96%B9%E8%A8%80%E8%AF%AD%E9%9F%B3%E6%9D%BF_setup_v20260710.zip",
+      "url": "https://github.com/gehth/henan-dialect-board/releases/download/v20260710/henan-dialect-board_setup_v20260710.zip",
       "size": 427179188,
       "sha256": "286a3e4305bf3e0d4f17a80a5976c28fdb6487bfab3d7b89c248454542e04a77"
     }
