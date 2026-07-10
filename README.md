@@ -150,4 +150,3 @@ python make_dist.py        # 选中最新构建目录，生成发布 zip
 
 ---
 
-由 WorkBuddy 生成 · 暗灰/翠绿情报终端风格
