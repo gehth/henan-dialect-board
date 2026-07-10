@@ -37,7 +37,8 @@
 ├── dialect_dict.json    # 内置河南方言词库 + 18 地市差异（演示 & LLM 兜底）
 ├── assets/illustrations/# AI 生成的方言插画（nongshale/deijin/zhongbuzhong/huimian）
 ├── requirements.txt     # 运行依赖
-├── build_exe.bat        # 一键打包 exe
+├── 河南方言语音板.spec   # PyInstaller 打包配置（裁剪+锁规避）
+├── build_installer.bat  # 一键生成安装包 setup.exe（需本机装 InnoSetup）
 ├── .env.example         # 密钥模板
 ├── dist/河南方言语音板.exe   # 打包好的发布版（双击即用）
 └── README.md
@@ -114,13 +115,12 @@ python main.py
 ## 📦 打包为 exe
 
 ```bash
-# 方式一：一键脚本
-build_exe.bat
+# 方式一：基于 spec 打包（推荐，已内置裁剪与 Defender 锁规避）
+set HB_BUILD_DIR=河南方言语音板_b<YYYYMMDD_HHMMSS>
+pyinstaller 河南方言语音板.spec
 
-# 方式二：手动命令
-pyinstaller --noconsole --onefile --name "河南方言语音板" ^
-  --add-data "dialect_dict.json;." --add-data "assets;assets" ^
-  --collect-all PySide6 --collect-data pypinyin main.py
+# 方式二：一键生成安装包（setup.exe，需本机装 InnoSetup）
+build_installer.bat
 ```
 
 产物在 `dist/河南方言语音板.exe`。
