@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "release_date": "2026-07-10",
+  "release_tag": "v20260710",
+  "channel": "stable",
+  "min_version": "1.0.0",
+  "summary": "v2.0.0 正式版：词库扩至 2168 条、FunASR 离线识别、学习互动三模式、安装包发布。",
+  "repo": "https://github.com/gehth/henan-dialect-board",
+  "downloads": {
+    "portable": {
+      "label": "绿色便携版（解压即用）",
+      "url": "https://github.com/gehth/henan-dialect-board/releases/download/v20260710/%E6%B2%B3%E5%8D%97%E6%96%B9%E8%A8%80%E8%AF%AD%E9%9F%B3%E6%9D%BF_v20260710.zip",
+      "size": 525690187,
+      "sha256": "166ce4a652c43db9a67433ce8a4675247f042c9ddaa3d5c9a6ccff43bd04513d"
+    },
+    "installer": {
+      "label": "安装包（setup.exe）",
+      "url": "https://github.com/gehth/henan-dialect-board/releases/download/v20260710/%E6%B2%B3%E5%8D%97%E6%96%B9%E8%A8%80%E8%AF%AD%E9%9F%B3%E6%9D%BF_setup_v20260710.zip",
+      "size": 427179188,
+      "sha256": "286a3e4305bf3e0d4f17a80a5976c28fdb6487bfab3d7b89c248454542e04a77"
+    }
+  },
+  "changelog": [
+    "词库扩充至 2168 条，覆盖 18 地市差异",
+    "识别引擎切换为 FunASR（离线可用，torch-free ONNX 路线）",
+    "新增学习互动三模式（跟读 / 听写 / 测验）",
+    "新增设置页、亮色主题、系统托盘驻留",
+    "发布 InnoSetup 安装包与绿色便携版两种分发形态",
+    "构建体积瘦身（分发包 731MB -> 501MB）"
+  ]
+}

@@ -40,6 +40,8 @@ import backend
 import theme
 import store
 from utils import mode_text
+from version import __version__, REPO_URL, APP_NAME
+from worker import Worker
 from recorder import Recorder
 from page_main import MainPage
 from page_map import MapPage
@@ -232,6 +234,9 @@ class MainWindow(QMainWindow):
         # 托盘
         self._init_tray()
 
+        # 帮助菜单（检查更新 / 关于）
+        self._init_help_menu()
+
         self._nav = nav
         self._brand = brand
         self._st = st
@@ -338,9 +343,12 @@ class MainWindow(QMainWindow):
         menu = QMenu(self)
         show_act = QAction("显示主窗口", self)
         show_act.triggered.connect(self._show_normal)
+        check_act = QAction("检查更新", self)
+        check_act.triggered.connect(self._check_update)
         quit_act = QAction("退出", self)
         quit_act.triggered.connect(self._quit)
         menu.addAction(show_act)
+        menu.addAction(check_act)
         menu.addAction(quit_act)
         self._tray.setContextMenu(menu)
         self._tray.activated.connect(
@@ -357,6 +365,70 @@ class MainWindow(QMainWindow):
         """托盘菜单「退出」：强制真正退出（绕过最小化到托盘的 closeEvent 逻辑）。"""
         self._force_quit = True
         QApplication.instance().quit()
+
+    def _init_help_menu(self):
+        """菜单栏「帮助」：检查更新 / 关于。"""
+        help_menu = self.menuBar().addMenu("帮助")
+        check_act = QAction("检查更新", self)
+        check_act.triggered.connect(self._check_update)
+        help_menu.addAction(check_act)
+        about_act = QAction("关于", self)
+        about_act.triggered.connect(self._show_about)
+        help_menu.addAction(about_act)
+
+    def _check_update(self):
+        """后台检查更新（非阻塞，优雅降级离线）。"""
+        from backend.update_check import check_for_update
+        url = store.get_setting("update_server_url", None)
+        if getattr(self, "_upd_worker", None) and self._upd_worker.isRunning():
+            return  # 已有检查在跑
+        self.statusBar().showMessage("正在检查更新…")
+        self._upd_worker = Worker(check_for_update, __version__, url)
+        self._upd_worker.finished.connect(self._on_update_result)
+        self._upd_worker.error.connect(self._on_update_error)
+        self._upd_worker.start()
+
+    def _on_update_result(self, info):
+        if info.get("error"):
+            self.statusBar().showMessage("检查更新失败")
+            QMessageBox.information(
+                self, "检查更新",
+                f"无法检查更新：\n{info['error']}\n\n请确认网络后重试。")
+            return
+        if not info.get("update_available"):
+            self.statusBar().showMessage(f"已是最新版本（v{info['current']}）")
+            QMessageBox.information(self, "检查更新", f"当前已是最新版本 v{info['current']}。")
+            return
+        lines = [f"发现新版本 v{info['latest']}（当前 v{info['current']}）", ""]
+        if info.get("summary"):
+            lines.append(info["summary"]); lines.append("")
+        if info.get("changelog"):
+            lines.append("更新内容：")
+            for c in info["changelog"]:
+                lines.append(f"  · {c}")
+            lines.append("")
+        dls = info.get("downloads", {})
+        if dls:
+            lines.append("下载地址：")
+            for k, v in dls.items():
+                lines.append(f"  · {v.get('label', k)}：{v.get('url')}")
+        msg = "\n".join(lines)
+        self.statusBar().showMessage(f"发现新版本 v{info['latest']}")
+        if info.get("force"):
+            QMessageBox.warning(self, "重要更新", msg)
+        else:
+            QMessageBox.information(self, "发现新版本", msg)
+
+    def _on_update_error(self, e):
+        self.statusBar().showMessage("检查更新出错")
+        QMessageBox.information(self, "检查更新", f"检查更新时出错：\n{e}")
+
+    def _show_about(self):
+        QMessageBox.about(
+            self, "关于 河南方言语音板",
+            f"{APP_NAME} v{__version__}\n\n"
+            f"河南方言学习 · 识别 · 互动桌面应用\n\n"
+            f"仓库：{REPO_URL}")
 
     def closeEvent(self, ev):
         if getattr(self, "_force_quit", False):
