@@ -49,9 +49,9 @@ class TestDemoProcess(unittest.TestCase):
 
 
 class TestDictionary(unittest.TestCase):
-    def test_aggregate_over_1000(self):
+    def test_aggregate_over_2000(self):
         d = get_dict()
-        self.assertGreaterEqual(len(d["phrases"]), 1000)
+        self.assertGreaterEqual(len(d["phrases"]), 2000)
 
     def test_packages_loaded(self):
         pkgs = get_dict_packages()
