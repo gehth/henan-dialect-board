@@ -6,7 +6,13 @@ from PyInstaller.utils.hooks import collect_all
 # 词库多包聚合：打包所有 dialect_dict*.json（排除 .bak），便于 M2 多包扩展
 import glob as _glob
 datas = [(j, '.') for j in _glob.glob('dialect_dict*.json')]
-datas += [('assets', 'assets')]
+# assets：递归收集；排除未使用的 sherpa-onnx 实验模型（233MB，识别引擎只用 paraformer_zh）
+_SHERPA_SKIP = 'sherpa-onnx-paraformer-zh-2023-09-14'
+for _root, _dirs, _files in os.walk('assets'):
+    if _SHERPA_SKIP in _root.replace('\\', '/'):
+        continue
+    for _f in _files:
+        datas.append((os.path.join(_root, _f), _root))
 binaries = []
 hiddenimports = ['asr', 'asr.base', 'asr.funasr_onnx_engine', 'asr.__init__', 'scipy',
                  'backend', 'backend._state', 'backend.pinyin', 'backend.dictionary',
@@ -15,6 +21,13 @@ hiddenimports = ['asr', 'asr.base', 'asr.funasr_onnx_engine', 'asr.__init__', 's
 datas += collect_data_files('pypinyin')
 tmp_ret = collect_all('PySide6')
 datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
+# 瘦身：剔除 QtWebEngine 区域设置 与 qml（对应模块已 exclude，运行时不加载，纯 Widgets 应用用不到）
+datas = [
+    d for d in datas
+    if 'qtwebengine_locales' not in d[1].replace('\\', '/')
+    and not d[1].replace('\\', '/').startswith('PySide6/qml')
+    and '/qml/' not in d[1].replace('\\', '/')
+]
 tmp_ret = collect_all('edge_tts')
 datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
 # 离线识别运行时：用 collect_all 确保原生 DLL 一并被收集
