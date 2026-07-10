@@ -1,0 +1,2609 @@
+{
+  "meta": {
+    "name": "河南方言词库（M2 扩充包）",
+    "coverage": "中原官话·河南片，按语义分类结构化补充",
+    "note": "v2.0 M2 扩充：聚合后全库突破 1000。主包优先，本包去重补充新增词条。",
+    "version": "2.0",
+    "count": 371
+  },
+  "phrases": [
+    {
+      "dialect": "今儿个",
+      "mandarin": "今天",
+      "pinyin": "jīn r ge",
+      "explanation": "“今”加“儿个”词尾，即今天。如“今儿个天气真不赖”。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "过喽",
+      "mandarin": "过去了",
+      "pinyin": "guò lou",
+      "explanation": "“喽”表完成，指时间已经过去。如“年下都过喽”。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "漫儿",
+      "mandarin": "慢慢",
+      "pinyin": "màn r",
+      "explanation": "“漫”表缓，叠成“漫儿”即慢慢地。如“你漫儿走”。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "挨黑儿",
+      "mandarin": "傍晚",
+      "pinyin": "āi hēi r",
+      "explanation": "“挨”靠近，“黑”天黑，即接近天黑的傍晚时分。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "半晌",
+      "mandarin": "半天/好久",
+      "pinyin": "bàn shǎng",
+      "explanation": "指较长一段时间，或半天。如“等了半晌才来”。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "整晌",
+      "mandarin": "整个半天",
+      "pinyin": "zhěng shǎng",
+      "explanation": "“整”加“晌”，指一整个上午或下午。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "一傍",
+      "mandarin": "傍晚",
+      "pinyin": "yī bàng",
+      "explanation": "口语也说“挨傍”，指傍晚时分。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "前晌",
+      "mandarin": "上午",
+      "pinyin": "qián shǎng",
+      "explanation": "“前晌”即上午。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "夜个黑",
+      "mandarin": "昨天晚上",
+      "pinyin": "yè ge hēi",
+      "explanation": "“夜个”昨天，“黑”夜晚，即昨晚。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "今个黑",
+      "mandarin": "今天晚上",
+      "pinyin": "jīn ge hēi",
+      "explanation": "“今个”今天，“黑”夜晚，即今晚。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "改日",
+      "mandarin": "改天",
+      "pinyin": "gǎi rì",
+      "explanation": "另找日子、改天。如“改日再聚”。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "咋会儿",
+      "mandarin": "什么时候",
+      "pinyin": "zǎ huì r",
+      "explanation": "即“多会儿”，什么时候。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "一眨眼",
+      "mandarin": "一瞬间",
+      "pinyin": "yī zhǎ yǎn",
+      "explanation": "形容时间极短，一眨眼工夫。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "猛个丁",
+      "mandarin": "突然",
+      "pinyin": "měng ge dīng",
+      "explanation": "“猛”突然，“个丁”词缀，即突然、冷不防。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "老早",
+      "mandarin": "很早",
+      "pinyin": "lǎo zǎo",
+      "explanation": "时间很早。如“老早就起来了”。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "迟早",
+      "mandarin": "早晚",
+      "pinyin": "chí zǎo",
+      "explanation": "或早或晚，总有一天。如“迟早要办”。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "年把",
+      "mandarin": "一年左右",
+      "pinyin": "nián bǎ",
+      "explanation": "“把”表约数，即一年光景。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "月把",
+      "mandarin": "一个月左右",
+      "pinyin": "yuè bǎ",
+      "explanation": "约一个月的时间。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "老",
+      "mandarin": "丈夫/妻子",
+      "pinyin": "lǎo",
+      "explanation": "夫妻互称，如“俺老”“他老”，指丈夫或妻子。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "丈人",
+      "mandarin": "岳父",
+      "pinyin": "zhàng ren",
+      "explanation": "妻子的父亲，岳父。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "老表",
+      "mandarin": "表亲",
+      "pinyin": "lǎo biǎo",
+      "explanation": "表兄弟，也用以称同辈远亲。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "媳妇",
+      "mandarin": "妻子",
+      "pinyin": "xí fu",
+      "explanation": "“媳”加“妇”变读，即妻子、老婆。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "半大孩子",
+      "mandarin": "半大的孩子",
+      "pinyin": "bàn dà hái zi",
+      "explanation": "指介于小孩和成人之间的少年。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "老闺女",
+      "mandarin": "小女儿",
+      "pinyin": "lǎo guī nü",
+      "explanation": "父母称最小的女儿。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "叔伯",
+      "mandarin": "堂亲",
+      "pinyin": "shū bai",
+      "explanation": "父系同祖父的兄弟，如叔伯兄弟即堂兄弟。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "先生",
+      "mandarin": "老师/医生",
+      "pinyin": "xiān shēng",
+      "explanation": "旧称老师、医生、先生。如“找先生看病”。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "师傅",
+      "mandarin": "手艺人/尊称",
+      "pinyin": "shī fù",
+      "explanation": "对工匠、司机的尊称。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "伙计",
+      "mandarin": "同伴/店员",
+      "pinyin": "huǒ ji",
+      "explanation": "伙伴、同事，旧时也指店员。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "对头",
+      "mandarin": "冤家/对手",
+      "pinyin": "duì tou",
+      "explanation": "仇人、对手，或指对象。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "自己人",
+      "mandarin": "自家人",
+      "pinyin": "zì jǐ rén",
+      "explanation": "亲近、同一阵营的人。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "孙男娣女",
+      "mandarin": "孙辈",
+      "pinyin": "sūn nán dì nǚ",
+      "explanation": "泛指孙子、孙女等孙辈。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "干亲",
+      "mandarin": "结拜亲",
+      "pinyin": "gān qīn",
+      "explanation": "非血缘的拜认亲戚，如干爹干妈。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "当家哩",
+      "mandarin": "掌家的",
+      "pinyin": "dāng jiā li",
+      "explanation": "指当家做主的人，多指丈夫。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "小厮",
+      "mandarin": "男仆/男孩",
+      "pinyin": "xiǎo sī",
+      "explanation": "旧称男仆或小男孩。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "老辈子",
+      "mandarin": "长辈",
+      "pinyin": "lǎo bèi zi",
+      "explanation": "上辈、老辈人。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "糊辣汤",
+      "mandarin": "胡辣汤",
+      "pinyin": "hú là tāng",
+      "explanation": "河南经典早餐汤，胡椒辣香，配油条。也写作胡辣汤。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "麻糖",
+      "mandarin": "麻花/糖糕",
+      "pinyin": "má táng",
+      "explanation": "油炸甜食，形似麻花或糖糕。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "丸子汤",
+      "mandarin": "丸子汤",
+      "pinyin": "wán zi tāng",
+      "explanation": "肉丸加汤，常配粉条。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "烧饼",
+      "mandarin": "烧饼",
+      "pinyin": "shāo bing",
+      "explanation": "芝麻烤饼。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "灌汤包",
+      "mandarin": "灌汤包",
+      "pinyin": "guàn tāng bāo",
+      "explanation": "皮薄汤多的包子。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "慌",
+      "mandarin": "跑",
+      "pinyin": "huāng",
+      "explanation": "河南话“慌”有快跑意，也说“溜”。如“他慌跑了”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "劙",
+      "mandarin": "划破",
+      "pinyin": "lí",
+      "explanation": "用刀等划开、划破。如“手叫剌了个口子”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "瞌睡",
+      "mandarin": "困",
+      "pinyin": "kē shuì",
+      "explanation": "想睡、犯困。如“瞌睡得慌”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "晌觉",
+      "mandarin": "午觉",
+      "pinyin": "shǎng jiào",
+      "explanation": "中午睡的觉。如“睡个晌觉”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "擤",
+      "mandarin": "擤鼻涕",
+      "pinyin": "xǐng",
+      "explanation": "捏鼻出涕。如“擤鼻涕”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "咂",
+      "mandarin": "吮",
+      "pinyin": "zā",
+      "explanation": "吸、吮。如“咂指头”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "噘",
+      "mandarin": "撇嘴/骂",
+      "pinyin": "juē",
+      "explanation": "撅嘴表不快，也指骂。如“噘人”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "聒",
+      "mandarin": "吵闹",
+      "pinyin": "guō",
+      "explanation": "声音嘈杂刺耳。如“别聒了”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "磨蹭",
+      "mandarin": "拖延",
+      "pinyin": "mó ceng",
+      "explanation": "动作慢、拖延。如“别磨蹭”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "折腾",
+      "mandarin": "反复做",
+      "pinyin": "zhē teng",
+      "explanation": "翻来覆去地做，也指受折磨。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "磕",
+      "mandarin": "碰/聊",
+      "pinyin": "kē",
+      "explanation": "碰撞，也指闲谈（唠嗑）。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "馏",
+      "mandarin": "蒸热",
+      "pinyin": "liù",
+      "explanation": "把凉熟食蒸热。如“馏馍”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "烩",
+      "mandarin": "混煮",
+      "pinyin": "huì",
+      "explanation": "多种食材同煮。如“烩菜”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "精",
+      "mandarin": "很/极",
+      "pinyin": "jīng",
+      "explanation": "表程度高，如“精瘦”“精湿”。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "齐",
+      "mandarin": "很/全",
+      "pinyin": "qí",
+      "explanation": "“齐”表完全、很，如“齐冻”“齐黑”。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "透",
+      "mandarin": "很",
+      "pinyin": "tòu",
+      "explanation": "“透”表极，如“透湿”“透亮”。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "稀",
+      "mandarin": "很",
+      "pinyin": "xī",
+      "explanation": "“稀”表程度，如“稀烂”“稀松”。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "挣",
+      "mandarin": "很",
+      "pinyin": "zhèng",
+      "explanation": "“挣”表极，如“挣疼”“挣脏”。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "忒",
+      "mandarin": "太",
+      "pinyin": "tuī",
+      "explanation": "“忒”即太，如“忒贵”。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "稍稍",
+      "mandarin": "稍微",
+      "pinyin": "shāo shāo",
+      "explanation": "“稍稍”即稍微。如“稍稍等”。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "撑死",
+      "mandarin": "最多",
+      "pinyin": "chēng sǐ",
+      "explanation": "表上限“最多”。如“撑死三十”。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "好赖",
+      "mandarin": "好歹",
+      "pinyin": "hǎo lài",
+      "explanation": "好与坏，或表无论如何。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "一般般",
+      "mandarin": "一般",
+      "pinyin": "yī bān bān",
+      "explanation": "普普通通。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "相当",
+      "mandarin": "挺",
+      "pinyin": "xiāng dāng",
+      "explanation": "程度不低，挺。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "顶",
+      "mandarin": "最",
+      "pinyin": "dǐng",
+      "explanation": "“顶”表最，如“顶好”。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "铡草",
+      "mandarin": "铡草",
+      "pinyin": "zhá cǎo",
+      "explanation": "用铡刀切草喂牲口。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "碾",
+      "mandarin": "碾压",
+      "pinyin": "niǎn",
+      "explanation": "石碾压谷脱粒。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "磙",
+      "mandarin": "石磙",
+      "pinyin": "gǔn",
+      "explanation": "碾场用的石滚子。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "浇地",
+      "mandarin": "灌溉",
+      "pinyin": "jiāo dì",
+      "explanation": "引水浇田。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "割麦",
+      "mandarin": "收麦",
+      "pinyin": "gē mài",
+      "explanation": "收割小麦。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "打场",
+      "mandarin": "脱粒",
+      "pinyin": "dǎ cháng",
+      "explanation": "在场院脱粒庄稼。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "拣棉花",
+      "mandarin": "摘棉",
+      "pinyin": "jiǎn mián hua",
+      "explanation": "摘棉花。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "放羊",
+      "mandarin": "牧羊",
+      "pinyin": "fàng yáng",
+      "explanation": "放牧羊群。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "喂牲口",
+      "mandarin": "饲养",
+      "pinyin": "wèi shēng kǒu",
+      "explanation": "喂养牛马驴等。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "起圈",
+      "mandarin": "清圈",
+      "pinyin": "qǐ juàn",
+      "explanation": "清理牲畜圈舍。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "点种",
+      "mandarin": "点播",
+      "pinyin": "diǎn zhòng",
+      "explanation": "挖坑点籽播种。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "间苗",
+      "mandarin": "疏苗",
+      "pinyin": "jiàn miáo",
+      "explanation": "拔去过密幼苗。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "收秋",
+      "mandarin": "秋收",
+      "pinyin": "shōu qiū",
+      "explanation": "秋季收获庄稼。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "昂",
+      "mandarin": "啊/吗",
+      "pinyin": "ang",
+      "explanation": "句末语气词，表疑问或应答。",
+      "category": "虚词助词"
+    },
+    {
+      "dialect": "啥",
+      "mandarin": "什么",
+      "pinyin": "shá",
+      "explanation": "疑问代词“什么”。如“弄啥”。",
+      "category": "虚词助词"
+    },
+    {
+      "dialect": "给",
+      "mandarin": "被/把",
+      "pinyin": "gěi",
+      "explanation": "表被动或处置，相当于“被、把”。",
+      "category": "虚词助词"
+    },
+    {
+      "dialect": "哟",
+      "mandarin": "呀",
+      "pinyin": "yō",
+      "explanation": "句末叹词，表提醒。",
+      "category": "虚词助词"
+    },
+    {
+      "dialect": "着哩",
+      "mandarin": "着呢",
+      "pinyin": "zhe li",
+      "explanation": "表持续或强调，如“好着哩”。",
+      "category": "虚词助词"
+    },
+    {
+      "dialect": "算",
+      "mandarin": "就算",
+      "pinyin": "suàn",
+      "explanation": "表让步，如“算他赢了”。",
+      "category": "虚词助词"
+    },
+    {
+      "dialect": "烧包",
+      "mandarin": "显摆",
+      "pinyin": "shāo bāo",
+      "explanation": "有钱或得势就炫耀。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "各意人",
+      "mandarin": "讨厌",
+      "pinyin": "gé yi rén",
+      "explanation": "“各意”讨厌，指人招人烦。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "装熊",
+      "mandarin": "装怂",
+      "pinyin": "zhuāng xióng",
+      "explanation": "装软弱、不肯干。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "黏糊",
+      "mandarin": "啰嗦/纠缠",
+      "pinyin": "nián hu",
+      "explanation": "说话做事拖泥带水。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "木艮",
+      "mandarin": "迟钝",
+      "pinyin": "mù gèn",
+      "explanation": "反应慢、不机灵。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "显摆",
+      "mandarin": "炫耀",
+      "pinyin": "xiǎn bai",
+      "explanation": "故意显露、炫耀。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "瞎掰",
+      "mandarin": "胡说",
+      "pinyin": "xiā bāi",
+      "explanation": "胡扯、没根据的话。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "缺德",
+      "mandarin": "坏心",
+      "pinyin": "quē dé",
+      "explanation": "品行坏、做损事。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "二百五",
+      "mandarin": "傻气的人",
+      "pinyin": "èr bǎi wǔ",
+      "explanation": "讥人傻、不懂事。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "碎嘴子",
+      "mandarin": "爱唠叨",
+      "pinyin": "suì zuǐ zi",
+      "explanation": "爱叨叨的人。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "刺头",
+      "mandarin": "难缠的人",
+      "pinyin": "cì tóu",
+      "explanation": "难对付、爱挑事的人。",
+      "category": "骂詈调侃"
+    },
+    {
+      "dialect": "老天爷",
+      "mandarin": "天/上天",
+      "pinyin": "lǎo tiān yé",
+      "explanation": "对天的尊称，感叹时用。如“老天爷呀”。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "月明地儿",
+      "mandarin": "月光下",
+      "pinyin": "yuè ming dì r",
+      "explanation": "月亮照亮的地方，月夜。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "淅沥",
+      "mandarin": "小雨声",
+      "pinyin": "xī lì",
+      "explanation": "形容细雨声。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "麻杆雨",
+      "mandarin": "密集小雨",
+      "pinyin": "má gǎn yǔ",
+      "explanation": "如麻杆密的小雨。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "过雨",
+      "mandarin": "阵雨",
+      "pinyin": "guò yǔ",
+      "explanation": "下过去的雨，阵雨。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "雾气",
+      "mandarin": "雾",
+      "pinyin": "wù qi",
+      "explanation": "雾。如“起雾气了”。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "冰茬",
+      "mandarin": "冰碴",
+      "pinyin": "bīng chá",
+      "explanation": "薄冰、冰碴子。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "凉荫",
+      "mandarin": "阴凉",
+      "pinyin": "liáng yìn",
+      "explanation": "遮阴的凉处。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "院儿",
+      "mandarin": "院子",
+      "pinyin": "yuàn r",
+      "explanation": "房屋外的院落。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "门楼",
+      "mandarin": "门楼",
+      "pinyin": "mén lóu",
+      "explanation": "院门上的建筑。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "煤火",
+      "mandarin": "煤炉",
+      "pinyin": "méi huǒ",
+      "explanation": "烧煤的炉子。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "条几",
+      "mandarin": "长条桌",
+      "pinyin": "tiáo jī",
+      "explanation": "靠墙的长条供桌。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "粪筐",
+      "mandarin": "粪篮",
+      "pinyin": "fèn kuāng",
+      "explanation": "拾粪用的篮子。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "水瓮",
+      "mandarin": "水缸",
+      "pinyin": "shuǐ wèng",
+      "explanation": "盛水的大缸。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "箔篱",
+      "mandarin": "篱笆",
+      "pinyin": "bó lí",
+      "explanation": "院落周围的篱笆。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "天窗",
+      "mandarin": "天窗",
+      "pinyin": "tiān chuāng",
+      "explanation": "屋顶的窗。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "脚地",
+      "mandarin": "地面",
+      "pinyin": "jiǎo dì",
+      "explanation": "屋里的地面。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "炕",
+      "mandarin": "土炕",
+      "pinyin": "kàng",
+      "explanation": "北方取暖睡卧的炕。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "脑壳",
+      "mandarin": "脑袋",
+      "pinyin": "nǎo ké",
+      "explanation": "头、脑袋。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "胳肢窝",
+      "mandarin": "腋下",
+      "pinyin": "gā zhi wō",
+      "explanation": "腋下。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "肋巴",
+      "mandarin": "肋骨",
+      "pinyin": "lèi ba",
+      "explanation": "肋骨。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "蹆",
+      "mandarin": "腿",
+      "pinyin": "tuǐ",
+      "explanation": "腿。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "饥困",
+      "mandarin": "饿",
+      "pinyin": "jī kun",
+      "explanation": "肚子饿。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "害渴",
+      "mandarin": "渴",
+      "pinyin": "hài kě",
+      "explanation": "口渴。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "发癔症",
+      "mandarin": "发呆",
+      "pinyin": "fā yì zheng",
+      "explanation": "精神恍惚、发呆。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "害眼",
+      "mandarin": "眼疾",
+      "pinyin": "hài yǎn",
+      "explanation": "眼睛发炎生病。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "上火",
+      "mandarin": "发炎",
+      "pinyin": "shàng huǒ",
+      "explanation": "中医说的内热、发炎。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "伤风",
+      "mandarin": "感冒",
+      "pinyin": "shāng fēng",
+      "explanation": "着凉感冒。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "扭着",
+      "mandarin": "扭伤",
+      "pinyin": "niǔ zhe",
+      "explanation": "筋骨扭伤。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "娶",
+      "mandarin": "娶妻",
+      "pinyin": "qǔ",
+      "explanation": "男子结婚。如“娶媳妇”。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "聘",
+      "mandarin": "订婚",
+      "pinyin": "pìn",
+      "explanation": "行聘订婚。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "过礼",
+      "mandarin": "送聘礼",
+      "pinyin": "guò lǐ",
+      "explanation": "男方送聘礼到女方。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "出门子",
+      "mandarin": "出嫁",
+      "pinyin": "chū mén zi",
+      "explanation": "女子出嫁。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "拉媒",
+      "mandarin": "说媒",
+      "pinyin": "lā méi",
+      "explanation": "撮合婚事。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "相看",
+      "mandarin": "相亲",
+      "pinyin": "xiāng kàn",
+      "explanation": "男女双方见面相亲。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "说亲",
+      "mandarin": "提亲",
+      "pinyin": "shuō qīn",
+      "explanation": "上门提亲。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "喜酒",
+      "mandarin": "婚宴",
+      "pinyin": "xǐ jiǔ",
+      "explanation": "结婚办的酒席。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "坐月子",
+      "mandarin": "产褥期",
+      "pinyin": "zuò yuè zi",
+      "explanation": "产妇产后休养。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "添丁",
+      "mandarin": "生孩子",
+      "pinyin": "tiān dīng",
+      "explanation": "家里添了小孩。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "分家",
+      "mandarin": "分产",
+      "pinyin": "fēn jiā",
+      "explanation": "兄弟分家产。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "过继",
+      "mandarin": "继养",
+      "pinyin": "guò jì",
+      "explanation": "把儿女过给他人抚养。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "孝服",
+      "mandarin": "丧服",
+      "pinyin": "xiào fú",
+      "explanation": "守孝穿的丧服。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "圆房",
+      "mandarin": "同房",
+      "pinyin": "yuán fáng",
+      "explanation": "新婚同房。",
+      "category": "婚恋家庭"
+    },
+    {
+      "dialect": "燎",
+      "mandarin": "燎/驱邪",
+      "pinyin": "liǎo",
+      "explanation": "过年火烧驱邪，也指点柴。",
+      "category": "民俗节庆"
+    },
+    {
+      "dialect": "逛庙会",
+      "mandarin": "庙会",
+      "pinyin": "guàng miào huì",
+      "explanation": "赶庙会游玩。",
+      "category": "民俗节庆"
+    },
+    {
+      "dialect": "耍社火",
+      "mandarin": "社火",
+      "pinyin": "shuǎ shè huǒ",
+      "explanation": "闹社火、民间游艺。",
+      "category": "民俗节庆"
+    },
+    {
+      "dialect": "蒸供",
+      "mandarin": "蒸祭品",
+      "pinyin": "zhēng gòng",
+      "explanation": "蒸制祭祀面食。",
+      "category": "民俗节庆"
+    },
+    {
+      "dialect": "送灯",
+      "mandarin": "送灯",
+      "pinyin": "sòng dēng",
+      "explanation": "正月十五给祖坟送灯。",
+      "category": "民俗节庆"
+    },
+    {
+      "dialect": "捞澡",
+      "mandarin": "洗澡",
+      "pinyin": "lào zǎo",
+      "explanation": "洗澡，过节洗澡去晦。",
+      "category": "民俗节庆"
+    },
+    {
+      "dialect": "辞旧",
+      "mandarin": "辞岁",
+      "pinyin": "cí jiù",
+      "explanation": "年末辞别旧岁。",
+      "category": "民俗节庆"
+    },
+    {
+      "dialect": "拜年",
+      "mandarin": "拜年",
+      "pinyin": "bài nián",
+      "explanation": "新春道贺。",
+      "category": "民俗节庆"
+    },
+    {
+      "dialect": "端午",
+      "mandarin": "端午节",
+      "pinyin": "duān wǔ",
+      "explanation": "五月节，吃粽子。",
+      "category": "民俗节庆"
+    },
+    {
+      "dialect": "中秋",
+      "mandarin": "中秋节",
+      "pinyin": "zhōng qiū",
+      "explanation": "八月十五，赏月吃月饼。",
+      "category": "民俗节庆"
+    },
+    {
+      "dialect": "米样",
+      "mandarin": "蚂蚁",
+      "pinyin": "mǐ yàng",
+      "explanation": "河南话称蚂蚁为米样。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "蚂蚱",
+      "mandarin": "蝗虫",
+      "pinyin": "mà zha",
+      "explanation": "蚂蚱、蝗虫。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "刀螂",
+      "mandarin": "螳螂",
+      "pinyin": "dāo láng",
+      "explanation": "螳螂。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "蛤蟆",
+      "mandarin": "青蛙",
+      "pinyin": "há ma",
+      "explanation": "蛙类。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "老家贼",
+      "mandarin": "麻雀",
+      "pinyin": "lǎo jiā zéi",
+      "explanation": "麻雀。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "檐蝙蝠",
+      "mandarin": "蝙蝠",
+      "pinyin": "yán biān fú",
+      "explanation": "蝙蝠。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "羯子",
+      "mandarin": "骟羊",
+      "pinyin": "jié zi",
+      "explanation": "阉过的羊。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "棠梨",
+      "mandarin": "杜梨",
+      "pinyin": "táng lí",
+      "explanation": "野梨。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "槐花",
+      "mandarin": "槐花",
+      "pinyin": "huái huā",
+      "explanation": "刺槐花，可蒸食。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "榆钱",
+      "mandarin": "榆钱",
+      "pinyin": "yú qián",
+      "explanation": "榆树嫩荚，可食。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "香椿",
+      "mandarin": "香椿",
+      "pinyin": "xiāng chūn",
+      "explanation": "香椿芽，可炒蛋。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "苘麻",
+      "mandarin": "青麻",
+      "pinyin": "qǐng má",
+      "explanation": "野麻类植物。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "袄",
+      "mandarin": "棉袄",
+      "pinyin": "ǎo",
+      "explanation": "有里的上衣，棉袄。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "夹袄",
+      "mandarin": "夹衣",
+      "pinyin": "jiá ǎo",
+      "explanation": "双层面无棉的衣。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "手巾",
+      "mandarin": "毛巾",
+      "pinyin": "shǒu jīn",
+      "explanation": "毛巾。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "围裙",
+      "mandarin": "围裙",
+      "pinyin": "wéi qún",
+      "explanation": "做饭系的裙。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "草帽",
+      "mandarin": "草帽",
+      "pinyin": "cǎo mào",
+      "explanation": "麦秆编的帽。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "兜肚",
+      "mandarin": "肚兜",
+      "pinyin": "dōu du",
+      "explanation": "贴身护腹的兜。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "绑腿",
+      "mandarin": "裹腿",
+      "pinyin": "bǎng tuǐ",
+      "explanation": "缠小腿的布。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "包袱",
+      "mandarin": "包袝",
+      "pinyin": "bāo fu",
+      "explanation": "包衣物的布包。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "暖壶",
+      "mandarin": "热水瓶",
+      "pinyin": "nuǎn hú",
+      "explanation": "保温瓶。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "灯捻",
+      "mandarin": "灯芯",
+      "pinyin": "dēng niǎn",
+      "explanation": "油灯芯。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "纺花",
+      "mandarin": "纺线",
+      "pinyin": "fǎng huā",
+      "explanation": "纺棉成线。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "捋袖",
+      "mandarin": "卷袖",
+      "pinyin": "luō xiù",
+      "explanation": "卷起袖子。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "歇班",
+      "mandarin": "休息",
+      "pinyin": "xiē bān",
+      "explanation": "轮休、不上班。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "上工",
+      "mandarin": "上工",
+      "pinyin": "shàng gōng",
+      "explanation": "去干活、上工。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "念书",
+      "mandarin": "读书",
+      "pinyin": "niàn shū",
+      "explanation": "上学、读书。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "放学",
+      "mandarin": "放学",
+      "pinyin": "fàng xué",
+      "explanation": "学校散学。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "识字",
+      "mandarin": "认字",
+      "pinyin": "shí zì",
+      "explanation": "认识字。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "考学",
+      "mandarin": "升学考",
+      "pinyin": "kǎo xué",
+      "explanation": "参加考试升学。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "功课",
+      "mandarin": "课业",
+      "pinyin": "gōng kè",
+      "explanation": "学业、作业。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "学徒",
+      "mandarin": "徒弟",
+      "pinyin": "xué tú",
+      "explanation": "当徒弟学艺。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "出师",
+      "mandarin": "满师",
+      "pinyin": "chū shī",
+      "explanation": "学徒期满。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "手艺",
+      "mandarin": "技艺",
+      "pinyin": "shǒu yì",
+      "explanation": "手工技艺。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "赶集",
+      "mandarin": "赶集",
+      "pinyin": "gǎn jí",
+      "explanation": "到集市交易。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "摆摊",
+      "mandarin": "摆摊",
+      "pinyin": "bǎi tān",
+      "explanation": "摆摊买卖。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "算账",
+      "mandarin": "结账",
+      "pinyin": "suàn zhàng",
+      "explanation": "算清账目。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "盘货",
+      "mandarin": "盘点",
+      "pinyin": "pán huò",
+      "explanation": "清点货物。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "加班",
+      "mandarin": "加班",
+      "pinyin": "jiā bān",
+      "explanation": "延长工时。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "下学",
+      "mandarin": "放学",
+      "pinyin": "xià xué",
+      "explanation": "同放学。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "温书",
+      "mandarin": "复习",
+      "pinyin": "wēn shū",
+      "explanation": "温习功课。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "一拃",
+      "mandarin": "一拃",
+      "pinyin": "yī zhǎ",
+      "explanation": "张开拇指与中指的长度。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "一庹",
+      "mandarin": "一庹",
+      "pinyin": "yī tuǒ",
+      "explanation": "两臂平伸的长度。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "一疙瘩",
+      "mandarin": "一块",
+      "pinyin": "yī gē da",
+      "explanation": "一团、一块。如“一疙瘩面”。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "恁些",
+      "mandarin": "那么多",
+      "pinyin": "nèn xiē",
+      "explanation": "那么多。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "半拉",
+      "mandarin": "半个",
+      "pinyin": "bàn lǎ",
+      "explanation": "一半。如“半拉西瓜”。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "一溜",
+      "mandarin": "一排",
+      "pinyin": "yī liù",
+      "explanation": "一排、一列。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "一帮",
+      "mandarin": "一群",
+      "pinyin": "yī bāng",
+      "explanation": "一群人。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "成堆",
+      "mandarin": "成堆",
+      "pinyin": "chéng duī",
+      "explanation": "聚成堆。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "大伙",
+      "mandarin": "大家",
+      "pinyin": "dà huǒ",
+      "explanation": "大家、众人。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "个个",
+      "mandarin": "每个",
+      "pinyin": "gè gè",
+      "explanation": "每一个。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "论堆",
+      "mandarin": "按堆",
+      "pinyin": "lùn duī",
+      "explanation": "不细数，按堆算。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "斤把",
+      "mandarin": "一斤左右",
+      "pinyin": "jīn bǎ",
+      "explanation": "约一斤。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "吃了冇",
+      "mandarin": "吃了吗",
+      "pinyin": "chī le mao",
+      "explanation": "见面问“吃了没有”，河南常见寒暄。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "好着哩",
+      "mandarin": "挺好",
+      "pinyin": "hǎo zhe li",
+      "explanation": "回答近况“挺好的”。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "慢走",
+      "mandarin": "慢走",
+      "pinyin": "màn zǒu",
+      "explanation": "送别客套话。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "到哪儿去",
+      "mandarin": "去哪",
+      "pinyin": "dào nǎ r qù",
+      "explanation": "路上相遇的问候。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "闲唠",
+      "mandarin": "闲聊",
+      "pinyin": "xián lào",
+      "explanation": "闲谈。如“咱闲唠唠”。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "串门",
+      "mandarin": "串门",
+      "pinyin": "chuàn mén",
+      "explanation": "到邻家坐坐。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "劳驾",
+      "mandarin": "借光",
+      "pinyin": "láo jià",
+      "explanation": "请人帮忙的客套。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "承情",
+      "mandarin": "领情",
+      "pinyin": "chéng qíng",
+      "explanation": "感谢好意。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "见外",
+      "mandarin": "客气",
+      "pinyin": "jiàn wài",
+      "explanation": "“别见外”即别客气。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "送行",
+      "mandarin": "送别",
+      "pinyin": "sòng xíng",
+      "explanation": "为人出行送别。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "回见",
+      "mandarin": "回头见",
+      "pinyin": "huí jiàn",
+      "explanation": "告别语。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "贵姓",
+      "mandarin": "尊姓",
+      "pinyin": "guì xìng",
+      "explanation": "问人姓氏的敬语。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "久仰",
+      "mandarin": "久仰",
+      "pinyin": "jiǔ yǎng",
+      "explanation": "初识客套，久闻大名。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "慢请",
+      "mandarin": "请留步",
+      "pinyin": "màn qǐng",
+      "explanation": "请客人止步。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "打扰",
+      "mandarin": "打扰",
+      "pinyin": "dǎ rǎo",
+      "explanation": "麻烦别人的客套。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "欢气",
+      "mandarin": "高兴",
+      "pinyin": "huān qi",
+      "explanation": "开心、欢喜。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "窝憋",
+      "mandarin": "憋屈",
+      "pinyin": "wō bie",
+      "explanation": "心里不畅快、憋屈。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "受活",
+      "mandarin": "舒服享受",
+      "pinyin": "shòu huo",
+      "explanation": "舒服、享受。如“心里受活”。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "光景",
+      "mandarin": "日子",
+      "pinyin": "guāng jǐng",
+      "explanation": "生活状况、日子。如“光景不错”。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "滋味",
+      "mandarin": "味道/感受",
+      "pinyin": "zī wèi",
+      "explanation": "味道，也指心里感受。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "滋味儿",
+      "mandarin": "趣味",
+      "pinyin": "zī wèi r",
+      "explanation": "有意思、有滋味。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "心盛",
+      "mandarin": "兴致高",
+      "pinyin": "xīn shèng",
+      "explanation": "兴致高、有精神。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "心窄",
+      "mandarin": "心眼小",
+      "pinyin": "xīn zhǎi",
+      "explanation": "心胸窄、想不开。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "悬乎",
+      "mandarin": "危险",
+      "pinyin": "xuán hu",
+      "explanation": "不保险、玄乎。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "踏实",
+      "mandarin": "安稳",
+      "pinyin": "tā shi",
+      "explanation": "心里安稳。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "敢自",
+      "mandarin": "当然",
+      "pinyin": "gǎn zi",
+      "explanation": "本来如此、当然。如“那敢自好”。",
+      "category": "其他"
+    },
+    {
+      "dialect": "立马",
+      "mandarin": "立刻",
+      "pinyin": "lì mǎ",
+      "explanation": "马上、立刻。",
+      "category": "其他"
+    },
+    {
+      "dialect": "反正",
+      "mandarin": "反正",
+      "pinyin": "fǎn zhèng",
+      "explanation": "无论如何。",
+      "category": "其他"
+    },
+    {
+      "dialect": "约莫",
+      "mandarin": "大概",
+      "pinyin": "yuē mo",
+      "explanation": "估计、大约。",
+      "category": "其他"
+    },
+    {
+      "dialect": "横竖",
+      "mandarin": "反正",
+      "pinyin": "héng shù",
+      "explanation": "横竖、反正。",
+      "category": "其他"
+    },
+    {
+      "dialect": "高低",
+      "mandarin": "到底",
+      "pinyin": "gāo dī",
+      "explanation": "终究、到底。如“高低来了”。",
+      "category": "其他"
+    },
+    {
+      "dialect": "净",
+      "mandarin": "全/总是",
+      "pinyin": "jìng",
+      "explanation": "表范围“都”，或总是。",
+      "category": "其他"
+    },
+    {
+      "dialect": "怕是",
+      "mandarin": "恐怕",
+      "pinyin": "pà shì",
+      "explanation": "恐怕、大概。",
+      "category": "其他"
+    },
+    {
+      "dialect": "兴许",
+      "mandarin": "也许",
+      "pinyin": "xīng xǔ",
+      "explanation": "或许、可能。",
+      "category": "其他"
+    },
+    {
+      "dialect": "保不准",
+      "mandarin": "说不定",
+      "pinyin": "bǎo bu zhǔn",
+      "explanation": "说不定。",
+      "category": "其他"
+    },
+    {
+      "dialect": "一准",
+      "mandarin": "一定",
+      "pinyin": "yī zhǔn",
+      "explanation": "必定、一定。",
+      "category": "其他"
+    },
+    {
+      "dialect": "总共",
+      "mandarin": "一共",
+      "pinyin": "zǒng gòng",
+      "explanation": "合起来算。",
+      "category": "其他"
+    },
+    {
+      "dialect": "倒退",
+      "mandarin": "退回",
+      "pinyin": "dào tuì",
+      "explanation": "往回退。",
+      "category": "其他"
+    },
+    {
+      "dialect": "将就",
+      "mandarin": "凑合",
+      "pinyin": "jiāng jiu",
+      "explanation": "勉强适应。如“将就吃”。",
+      "category": "其他"
+    },
+    {
+      "dialect": "凑合",
+      "mandarin": "将就",
+      "pinyin": "còu he",
+      "explanation": "勉强过得去。",
+      "category": "其他"
+    },
+    {
+      "dialect": "使里",
+      "mandarin": "夜里",
+      "pinyin": "shǐ lǐ",
+      "explanation": "“使”即深，“里”时候，指夜里、晚上。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "黑介",
+      "mandarin": "夜里",
+      "pinyin": "hēi jiè",
+      "explanation": "“黑”天黑，“介”词尾，即夜里。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "年头",
+      "mandarin": "年初",
+      "pinyin": "nián tóu",
+      "explanation": "一年的开头。也指年份。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "年尾",
+      "mandarin": "年底",
+      "pinyin": "nián wěi",
+      "explanation": "一年的末尾。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "前年",
+      "mandarin": "前年",
+      "pinyin": "qián nián",
+      "explanation": "去年的前一年。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "后年",
+      "mandarin": "后年",
+      "pinyin": "hòu nián",
+      "explanation": "明年的后一年。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "外后年",
+      "mandarin": "大后年",
+      "pinyin": "wài hòu nián",
+      "explanation": "后年的次年。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "多咱",
+      "mandarin": "什么时候",
+      "pinyin": "duō zá",
+      "explanation": "疑问时间，即什么时候。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "这咱",
+      "mandarin": "这时候",
+      "pinyin": "zhè zán",
+      "explanation": "近指，这时候。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "那咱",
+      "mandarin": "那时候",
+      "pinyin": "nà zán",
+      "explanation": "远指，那时候。",
+      "category": "时间方位"
+    },
+    {
+      "dialect": "丈母娘",
+      "mandarin": "岳母",
+      "pinyin": "zhàng mǔ niáng",
+      "explanation": "妻子的母亲。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "舅",
+      "mandarin": "舅舅",
+      "pinyin": "jiù",
+      "explanation": "母亲的兄弟。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "姑",
+      "mandarin": "姑姑",
+      "pinyin": "gū",
+      "explanation": "父亲的姐妹。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "姨",
+      "mandarin": "姨妈",
+      "pinyin": "yí",
+      "explanation": "母亲的姐妹。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "堂哥",
+      "mandarin": "堂兄",
+      "pinyin": "táng gē",
+      "explanation": "同祖父的哥哥。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "大爷",
+      "mandarin": "伯父",
+      "pinyin": "dà yé",
+      "explanation": "父亲的哥哥。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "小叔",
+      "mandarin": "小叔子",
+      "pinyin": "xiǎo shū",
+      "explanation": "丈夫的弟弟。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "内侄",
+      "mandarin": "妻侄",
+      "pinyin": "nèi zhí",
+      "explanation": "妻子的侄子。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "童养媳",
+      "mandarin": "童养媳",
+      "pinyin": "tóng yǎng xí",
+      "explanation": "旧时从小养在婆家的媳妇。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "寡妇",
+      "mandarin": "寡妇",
+      "pinyin": "guǎ fù",
+      "explanation": "丧夫的妇女。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "光棍汉",
+      "mandarin": "单身汉",
+      "pinyin": "guāng gùn hàn",
+      "explanation": "未婚成年男子。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "愣头青",
+      "mandarin": "莽撞人",
+      "pinyin": "lèng tóu qīng",
+      "explanation": "指鲁莽、不知深浅的年轻人。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "新女婿",
+      "mandarin": "新郎",
+      "pinyin": "xīn nǚ xù",
+      "explanation": "刚结婚的女婿、新郎。",
+      "category": "人物称谓"
+    },
+    {
+      "dialect": "烩菜",
+      "mandarin": "大烩菜",
+      "pinyin": "huì cài",
+      "explanation": "多种菜同锅烩制。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "熬菜",
+      "mandarin": "炖菜",
+      "pinyin": "áo cài",
+      "explanation": "慢火炖的杂菜。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "酥肉",
+      "mandarin": "酥肉",
+      "pinyin": "sū ròu",
+      "explanation": "裹粉炸后蒸的肉。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "扣碗",
+      "mandarin": "扣碗肉",
+      "pinyin": "kòu wǎn",
+      "explanation": "蒸碗肉，扣盘而食。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "馅饼",
+      "mandarin": "馅饼",
+      "pinyin": "xiàn bǐng",
+      "explanation": "包馅烙饼。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "焦盖",
+      "mandarin": "焦盖馍",
+      "pinyin": "jiāo gài",
+      "explanation": "烙得焦黄的饼。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "油格蹦",
+      "mandarin": "油炸面片",
+      "pinyin": "yóu gé bèng",
+      "explanation": "油炸起泡的小面片。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "菜托",
+      "mandarin": "菜盒",
+      "pinyin": "cài tuō",
+      "explanation": "菜馅面托油炸。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "糟鱼",
+      "mandarin": "糟鱼",
+      "pinyin": "zāo yú",
+      "explanation": "酒糟腌制的鱼。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "焖饼",
+      "mandarin": "焖饼",
+      "pinyin": "mèn bǐng",
+      "explanation": "菜肉与饼丝同焖。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "炒饼",
+      "mandarin": "炒饼",
+      "pinyin": "chǎo bǐng",
+      "explanation": "饼丝同菜炒。",
+      "category": "饮食特产"
+    },
+    {
+      "dialect": "绱鞋",
+      "mandarin": "上鞋",
+      "pinyin": "shàng xié",
+      "explanation": "把鞋底鞋面缝在一起。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "焐",
+      "mandarin": "捂热",
+      "pinyin": "wù",
+      "explanation": "用体温或物暖热。如“焐手”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "敨",
+      "mandarin": "展平",
+      "pinyin": "tǒu",
+      "explanation": "把褶皱展平。如“敨衣裳”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "揻",
+      "mandarin": "折弯",
+      "pinyin": "wēi",
+      "explanation": "使直物弯。如“揻钩子”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "趸",
+      "mandarin": "整批",
+      "pinyin": "dǔn",
+      "explanation": "整批买进。如“趸货”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "掖",
+      "mandarin": "塞",
+      "pinyin": "yē",
+      "explanation": "把东西塞进缝隙。如“掖被角”。",
+      "category": "动作行为"
+    },
+    {
+      "dialect": "精是",
+      "mandarin": "真是",
+      "pinyin": "jīng shì",
+      "explanation": "表强调“真是”。如“精是怪”。",
+      "category": "程度评价"
+    },
+    {
+      "dialect": "耧",
+      "mandarin": "耧车",
+      "pinyin": "lóu",
+      "explanation": "播种用的农具。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "镰",
+      "mandarin": "镰刀",
+      "pinyin": "lián",
+      "explanation": "割草割麦的刀。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "耙",
+      "mandarin": "耙",
+      "pinyin": "bà",
+      "explanation": "平整土地的农具。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "碌碡",
+      "mandarin": "石磙",
+      "pinyin": "liù zhóu",
+      "explanation": "碾场石滚。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "囤",
+      "mandarin": "粮囤",
+      "pinyin": "dùn",
+      "explanation": "储粮的囤。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "看青",
+      "mandarin": "护青",
+      "pinyin": "kān qīng",
+      "explanation": "看守庄稼防偷。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "垫栏",
+      "mandarin": "垫圈",
+      "pinyin": "diàn lán",
+      "explanation": "给牲畜圈垫土。",
+      "category": "农事劳作"
+    },
+    {
+      "dialect": "风门",
+      "mandarin": "风门",
+      "pinyin": "fēng mén",
+      "explanation": "院门外的挡风门。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "灶火",
+      "mandarin": "灶间",
+      "pinyin": "zào huǒ",
+      "explanation": "做饭的灶屋。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "水筲",
+      "mandarin": "水桶",
+      "pinyin": "shuǐ shāo",
+      "explanation": "挑水的大桶。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "笊篱",
+      "mandarin": "漏勺",
+      "pinyin": "zhào lí",
+      "explanation": "捞食的勺。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "盖垫",
+      "mandarin": "盖帘",
+      "pinyin": "gài diàn",
+      "explanation": "盖缸的圆形木垫。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "地排车",
+      "mandarin": "平板车",
+      "pinyin": "dì pái chē",
+      "explanation": "人力平板车。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "平车",
+      "mandarin": "平车",
+      "pinyin": "píng chē",
+      "explanation": "同地排车。",
+      "category": "居家环境"
+    },
+    {
+      "dialect": "脖儿梗",
+      "mandarin": "脖颈",
+      "pinyin": "bó ér gěng",
+      "explanation": "脖子的后颈。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "指甲盖",
+      "mandarin": "指甲",
+      "pinyin": "zhǐ jiǎ gài",
+      "explanation": "指甲盖。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "脊梁骨",
+      "mandarin": "脊骨",
+      "pinyin": "jǐ liáng gǔ",
+      "explanation": "后背的脊骨。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "下巴颏",
+      "mandarin": "下巴",
+      "pinyin": "xià bā kē",
+      "explanation": "下巴。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "牙花",
+      "mandarin": "牙龈",
+      "pinyin": "yá huā",
+      "explanation": "牙龈。",
+      "category": "身体疾病"
+    },
+    {
+      "dialect": "冷子",
+      "mandarin": "冰雹",
+      "pinyin": "lěng zi",
+      "explanation": "冰雹的俗称。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "凌",
+      "mandarin": "冰凌",
+      "pinyin": "líng",
+      "explanation": "水结的冰。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "冻凌",
+      "mandarin": "冰凌",
+      "pinyin": "dòng líng",
+      "explanation": "屋檐垂的冰柱。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "旋风",
+      "mandarin": "旋风",
+      "pinyin": "xuán fēng",
+      "explanation": "打转的风。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "闷雷",
+      "mandarin": "闷雷",
+      "pinyin": "mèn léi",
+      "explanation": "低沉的雷。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "炸雷",
+      "mandarin": "响雷",
+      "pinyin": "zhà léi",
+      "explanation": "突发的响雷。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "树挂",
+      "mandarin": "雾凇",
+      "pinyin": "shù guà",
+      "explanation": "雾凇，树上冰晶。",
+      "category": "自然气象"
+    },
+    {
+      "dialect": "蚰子",
+      "mandarin": "蝈蝈",
+      "pinyin": "yóu zi",
+      "explanation": "蝈蝈。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "油葫芦",
+      "mandarin": "油葫芦",
+      "pinyin": "yóu hú lú",
+      "explanation": "似蟋蟀的鸣虫。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "土狗",
+      "mandarin": "蝼蛄",
+      "pinyin": "tǔ gǒu",
+      "explanation": "蝼蛄。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "蛐蛐",
+      "mandarin": "蟋蟀",
+      "pinyin": "qū qū",
+      "explanation": "蟋蟀的俗称。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "知了",
+      "mandarin": "蝉",
+      "pinyin": "zhī liǎo",
+      "explanation": "蝉。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "蚂螂",
+      "mandarin": "蜻蜓",
+      "pinyin": "mā láng",
+      "explanation": "蜻蜓。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "蠓虫",
+      "mandarin": "小飞虫",
+      "pinyin": "měng chóng",
+      "explanation": "叮人的小飞虫。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "牛虻",
+      "mandarin": "牛虻",
+      "pinyin": "niú méng",
+      "explanation": "吸牛血的蝇。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "虱子",
+      "mandarin": "虱子",
+      "pinyin": "shī zi",
+      "explanation": "虱。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "跳蚤",
+      "mandarin": "跳蚤",
+      "pinyin": "tiào zǎo",
+      "explanation": "跳蚤。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "臭虫",
+      "mandarin": "臭虫",
+      "pinyin": "chòu chóng",
+      "explanation": "床虱。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "蟑螂",
+      "mandarin": "蟑螂",
+      "pinyin": "zhāng láng",
+      "explanation": "蟑螂。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "玉茭",
+      "mandarin": "玉米",
+      "pinyin": "yù jiāo",
+      "explanation": "玉米的别称。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "山药",
+      "mandarin": "土豆",
+      "pinyin": "shān yào",
+      "explanation": "部分地区称土豆为山药。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "小茴香",
+      "mandarin": "茴香",
+      "pinyin": "xiǎo huí xiāng",
+      "explanation": "茴香。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "花椒",
+      "mandarin": "花椒",
+      "pinyin": "huā jiāo",
+      "explanation": "调味香料。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "蓖麻",
+      "mandarin": "蓖麻",
+      "pinyin": "bì má",
+      "explanation": "油料植物。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "朝阳花",
+      "mandarin": "向日葵",
+      "pinyin": "cháo yáng huā",
+      "explanation": "向日葵。",
+      "category": "动物植物"
+    },
+    {
+      "dialect": "鞋楦",
+      "mandarin": "鞋楦",
+      "pinyin": "xié xuàn",
+      "explanation": "撑鞋的木楦。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "腿带",
+      "mandarin": "腿带",
+      "pinyin": "tuǐ dài",
+      "explanation": "扎裤脚的带。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "毡帽",
+      "mandarin": "毡帽",
+      "pinyin": "zhān mào",
+      "explanation": "毡制帽。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "耳捂",
+      "mandarin": "耳罩",
+      "pinyin": "ěr wǔ",
+      "explanation": "护耳的捂子。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "手焖子",
+      "mandarin": "手闷子",
+      "pinyin": "shǒu mèn zi",
+      "explanation": "棉手闷子。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "帽囤",
+      "mandarin": "帽坯",
+      "pinyin": "mào dùn",
+      "explanation": "帽胎。",
+      "category": "衣物日用"
+    },
+    {
+      "dialect": "下力",
+      "mandarin": "卖力",
+      "pinyin": "xià lì",
+      "explanation": "出力干活。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "卖力",
+      "mandarin": "出力",
+      "pinyin": "mài lì",
+      "explanation": "使劲干活。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "揽活",
+      "mandarin": "接活",
+      "pinyin": "lǎn huó",
+      "explanation": "承揽活计。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "短工",
+      "mandarin": "短工",
+      "pinyin": "duǎn gōng",
+      "explanation": "临时雇工。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "长工",
+      "mandarin": "长工",
+      "pinyin": "cháng gōng",
+      "explanation": "长年雇工。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "把式",
+      "mandarin": "行家",
+      "pinyin": "bǎ shì",
+      "explanation": "懂技术的人。如“老把式”。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "掌柜",
+      "mandarin": "老板",
+      "pinyin": "zhǎng guì",
+      "explanation": "店铺老板。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "东家",
+      "mandarin": "雇主",
+      "pinyin": "dōng jiā",
+      "explanation": "雇主、主人。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "账房",
+      "mandarin": "会计",
+      "pinyin": "zhàng fáng",
+      "explanation": "管账的人。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "放牛",
+      "mandarin": "牧牛",
+      "pinyin": "fàng niú",
+      "explanation": "放牧牛。",
+      "category": "工作学习"
+    },
+    {
+      "dialect": "一股",
+      "mandarin": "一股",
+      "pinyin": "yī gǔ",
+      "explanation": "条状的一支。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "一绺",
+      "mandarin": "一绺",
+      "pinyin": "yī liǔ",
+      "explanation": "成束的一把。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "一嘟噜",
+      "mandarin": "一串",
+      "pinyin": "yī dū lū",
+      "explanation": "成串的一挂。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "一摊",
+      "mandarin": "一片",
+      "pinyin": "yī tān",
+      "explanation": "摊开的一片。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "一洼",
+      "mandarin": "一汪",
+      "pinyin": "yī wā",
+      "explanation": "一汪水。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "一捏",
+      "mandarin": "一撮",
+      "pinyin": "yī niē",
+      "explanation": "用手指捏起的一点。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "一成",
+      "mandarin": "一成",
+      "pinyin": "yì chéng",
+      "explanation": "十分之一。",
+      "category": "数量性状"
+    },
+    {
+      "dialect": "借光",
+      "mandarin": "借光",
+      "pinyin": "jiè guāng",
+      "explanation": "请人让路或帮忙的客套。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "慢待",
+      "mandarin": "怠慢",
+      "pinyin": "màn dài",
+      "explanation": "招待不周。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "叨扰",
+      "mandarin": "打扰",
+      "pinyin": "tāo rǎo",
+      "explanation": "谢人款待的客套。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "有偏",
+      "mandarin": "失陪",
+      "pinyin": "yǒu piān",
+      "explanation": "“有偏了”即失陪。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "少陪",
+      "mandarin": "少陪",
+      "pinyin": "shǎo péi",
+      "explanation": "不能奉陪。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "失陪",
+      "mandarin": "失陪",
+      "pinyin": "shī péi",
+      "explanation": "中途离开的客套。",
+      "category": "问候交际"
+    },
+    {
+      "dialect": "可意",
+      "mandarin": "合意",
+      "pinyin": "kě yì",
+      "explanation": "称心如意。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "遂心",
+      "mandarin": "顺心",
+      "pinyin": "suì xīn",
+      "explanation": "合乎心愿。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "窝心",
+      "mandarin": "憋屈",
+      "pinyin": "wō xīn",
+      "explanation": "受了委屈闷在心里。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "恓惶",
+      "mandarin": "可怜",
+      "pinyin": "xī huáng",
+      "explanation": "凄凉、可怜。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "心酸",
+      "mandarin": "心酸",
+      "pinyin": "xīn suān",
+      "explanation": "心里酸楚。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "眼热",
+      "mandarin": "羡慕",
+      "pinyin": "yǎn rè",
+      "explanation": "眼红、羡慕。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "掐架",
+      "mandarin": "打架",
+      "pinyin": "qiā jià",
+      "explanation": "吵闹打架。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "拌嘴",
+      "mandarin": "口角",
+      "pinyin": "bàn zuǐ",
+      "explanation": "吵嘴。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "龇牙",
+      "mandarin": "咧嘴",
+      "pinyin": "zī yá",
+      "explanation": "龇牙咧嘴，表不快或凶相。",
+      "category": "情绪心理"
+    },
+    {
+      "dialect": "别价",
+      "mandarin": "别这样",
+      "pinyin": "bié jià",
+      "explanation": "劝阻“别这样”。",
+      "category": "其他"
+    },
+    {
+      "dialect": "许是",
+      "mandarin": "也许是",
+      "pinyin": "xǔ shì",
+      "explanation": "也许、可能。",
+      "category": "其他"
+    },
+    {
+      "dialect": "大约摸",
+      "mandarin": "大概",
+      "pinyin": "dà yuē mō",
+      "explanation": "大约、大概。",
+      "category": "其他"
+    },
+    {
+      "dialect": "拢共",
+      "mandarin": "一共",
+      "pinyin": "lǒng gòng",
+      "explanation": "总共。",
+      "category": "其他"
+    },
+    {
+      "dialect": "合共",
+      "mandarin": "一共",
+      "pinyin": "hé gòng",
+      "explanation": "合起来算。",
+      "category": "其他"
+    },
+    {
+      "dialect": "满打满算",
+      "mandarin": "全都算上",
+      "pinyin": "mǎn dǎ mǎn suàn",
+      "explanation": "把一切算进去。",
+      "category": "其他"
+    },
+    {
+      "dialect": "别是",
+      "mandarin": "莫非",
+      "pinyin": "bié shì",
+      "explanation": "表示怀疑“莫非”。",
+      "category": "其他"
+    }
+  ],
+  "cities": []
+}

@@ -1,0 +1,980 @@
+{
+  "meta": {
+    "name": "河南方言补充词库（地市差异）",
+    "coverage": "中原官话河南各片（豫北/豫南/中原/豫东/豫西）",
+    "note": "M2-2 多包聚合补充包；含 region 字段支持多地方言对比（M2-4）。",
+    "version": "2.0.0-extra",
+    "count": 121
+  },
+  "phrases": [
+    {
+      "dialect": "俺爷",
+      "mandarin": "爷爷",
+      "pinyin": "ǎn yé",
+      "explanation": "河南话（通用常见）说法，意思是「爷爷」。“俺”是我，“爷”是祖父。",
+      "category": "人物称谓",
+      "region": "通用"
+    },
+    {
+      "dialect": "俺奶",
+      "mandarin": "奶奶",
+      "pinyin": "ǎn nǎi",
+      "explanation": "河南话（通用常见）说法，意思是「奶奶」。“奶”即祖母。",
+      "category": "人物称谓",
+      "region": "通用"
+    },
+    {
+      "dialect": "老里",
+      "mandarin": "丈夫 / 爱人",
+      "pinyin": "lǎo li",
+      "explanation": "河南话（豫东常见）说法，意思是「丈夫 / 爱人」。部分豫东地区称自己丈夫为“老里”。",
+      "category": "人物称谓",
+      "region": "豫东"
+    },
+    {
+      "dialect": "屋里人",
+      "mandarin": "妻子",
+      "pinyin": "wū li rén",
+      "explanation": "河南话（通用常见）说法，意思是「妻子」。旧时对外称自家妻子为“屋里人”。",
+      "category": "人物称谓",
+      "region": "通用"
+    },
+    {
+      "dialect": "爷们儿",
+      "mandarin": "男人 / 丈夫",
+      "pinyin": "yé menr",
+      "explanation": "河南话（中原常见）说法，意思是「男人 / 丈夫」。“爷们儿”指成年男子，也指丈夫。",
+      "category": "人物称谓",
+      "region": "中原"
+    },
+    {
+      "dialect": "媳妇儿",
+      "mandarin": "妻子 / 儿媳",
+      "pinyin": "xí fur",
+      "explanation": "河南话（通用常见）说法，意思是「妻子 / 儿媳」。河南话“媳妇儿”多指妻子。",
+      "category": "人物称谓",
+      "region": "通用"
+    },
+    {
+      "dialect": "妗子",
+      "mandarin": "舅妈",
+      "pinyin": "jìn zi",
+      "explanation": "河南话（通用常见）说法，意思是「舅妈」。母亲的兄弟之妻称“妗子”。",
+      "category": "人物称谓",
+      "region": "通用"
+    },
+    {
+      "dialect": "光棍儿",
+      "mandarin": "未婚男子",
+      "pinyin": "guāng gùnr",
+      "explanation": "河南话（通用常见）说法，意思是「未婚男子」。也指无妻室的人。",
+      "category": "人物称谓",
+      "region": "通用"
+    },
+    {
+      "dialect": "老鳖一",
+      "mandarin": "吝啬鬼",
+      "pinyin": "lǎo biē yī",
+      "explanation": "河南话（豫东常见）说法，意思是「吝啬鬼」。形容小气、抠门的人。",
+      "category": "人物称谓",
+      "region": "豫东"
+    },
+    {
+      "dialect": "呲",
+      "mandarin": "斥责 / 训",
+      "pinyin": "cī",
+      "explanation": "河南话（通用常见）说法，意思是「斥责 / 训」。“呲一顿”即训斥一顿。",
+      "category": "动作行为",
+      "region": "通用"
+    },
+    {
+      "dialect": "挦",
+      "mandarin": "扯 / 拔",
+      "pinyin": "xián",
+      "explanation": "河南话（豫西常见）说法，意思是「扯 / 拔」。用手扯、拔，如“挦鸡毛”。",
+      "category": "动作行为",
+      "region": "豫西"
+    },
+    {
+      "dialect": "㧟",
+      "mandarin": "搔 / 挎",
+      "pinyin": "kuǎi",
+      "explanation": "河南话（通用常见）说法，意思是「搔 / 挎」。“㧟痒痒”即挠痒；“㧟篮子”即挎篮子。",
+      "category": "动作行为",
+      "region": "通用"
+    },
+    {
+      "dialect": "搲",
+      "mandarin": "舀",
+      "pinyin": "wǎ",
+      "explanation": "河南话（豫南常见）说法，意思是「舀」。用瓢、勺舀取，如“搲一碗汤”。",
+      "category": "动作行为",
+      "region": "豫南"
+    },
+    {
+      "dialect": "擩",
+      "mandarin": "塞",
+      "pinyin": "rǔ",
+      "explanation": "河南话（豫西常见）说法，意思是「塞」。硬塞进去，如“把钱擩兜里”。",
+      "category": "动作行为",
+      "region": "豫西"
+    },
+    {
+      "dialect": "熥",
+      "mandarin": "蒸热",
+      "pinyin": "tēng",
+      "explanation": "河南话（通用常见）说法，意思是「蒸热」。把凉馒头放锅里蒸热叫“熥”。",
+      "category": "动作行为",
+      "region": "通用"
+    },
+    {
+      "dialect": "焯",
+      "mandarin": "烫 / 焯水",
+      "pinyin": "chāo",
+      "explanation": "河南话（通用常见）说法，意思是「烫 / 焯水」。把菜放开水里烫一下。",
+      "category": "动作行为",
+      "region": "通用"
+    },
+    {
+      "dialect": "沤",
+      "mandarin": "久泡",
+      "pinyin": "òu",
+      "explanation": "河南话（通用常见）说法，意思是「久泡」。东西泡在水里久放，如“沤肥”。",
+      "category": "动作行为",
+      "region": "通用"
+    },
+    {
+      "dialect": "嬎",
+      "mandarin": "禽类下蛋",
+      "pinyin": "fàn",
+      "explanation": "河南话（豫南常见）说法，意思是「禽类下蛋」。“鸡嬎蛋”即鸡下蛋。",
+      "category": "动作行为",
+      "region": "豫南"
+    },
+    {
+      "dialect": "趿拉",
+      "mandarin": "穿拖鞋 / 拖着走",
+      "pinyin": "tā la",
+      "explanation": "河南话（通用常见）说法，意思是「穿拖鞋 / 拖着走」。鞋子不提跟，拖着走。",
+      "category": "动作行为",
+      "region": "通用"
+    },
+    {
+      "dialect": "跍蹴",
+      "mandarin": "蹲",
+      "pinyin": "gū jiù",
+      "explanation": "河南话（豫西常见）说法，意思是「蹲」。“跍蹴这儿”即蹲这儿。",
+      "category": "动作行为",
+      "region": "豫西"
+    },
+    {
+      "dialect": "骨朵",
+      "mandarin": "花蕾 / 凑近",
+      "pinyin": "gū duo",
+      "explanation": "河南话（豫北常见）说法，意思是「花蕾 / 凑近」。“花骨朵”即花蕾；“骨朵过去”即凑过去。",
+      "category": "动作行为",
+      "region": "豫北"
+    },
+    {
+      "dialect": "出溜",
+      "mandarin": "滑",
+      "pinyin": "chū liu",
+      "explanation": "河南话（通用常见）说法，意思是「滑」。“出溜一下”即滑一下。",
+      "category": "动作行为",
+      "region": "通用"
+    },
+    {
+      "dialect": "骨涌",
+      "mandarin": "蠕动 / 扭动",
+      "pinyin": "gū yong",
+      "explanation": "河南话（豫北常见）说法，意思是「蠕动 / 扭动」。虫类或人不安分地扭动。",
+      "category": "动作行为",
+      "region": "豫北"
+    },
+    {
+      "dialect": "捯饬",
+      "mandarin": "收拾 / 打扮",
+      "pinyin": "dáo chi",
+      "explanation": "河南话（通用常见）说法，意思是「收拾 / 打扮」。“捯饬捯饬”即整理、打扮。",
+      "category": "动作行为",
+      "region": "通用"
+    },
+    {
+      "dialect": "浆面条",
+      "mandarin": "一种酸味面",
+      "pinyin": "jiàng miàn tiáo",
+      "explanation": "河南话（中原常见）说法，意思是「一种酸味面」。洛阳名吃，用豆浆发酵做汤底。",
+      "category": "饮食特产",
+      "region": "中原"
+    },
+    {
+      "dialect": "焖子",
+      "mandarin": "凉粉煎块",
+      "pinyin": "mèn zi",
+      "explanation": "河南话（豫北常见）说法，意思是「凉粉煎块」。红薯淀粉制成的凉粉块，煎食。",
+      "category": "饮食特产",
+      "region": "豫北"
+    },
+    {
+      "dialect": "碾转",
+      "mandarin": "青麦食品",
+      "pinyin": "niǎn zhuàn",
+      "explanation": "河南话（豫西常见）说法，意思是「青麦食品」。青麦粒碾成条，清末民间救荒食。",
+      "category": "饮食特产",
+      "region": "豫西"
+    },
+    {
+      "dialect": "变蛋",
+      "mandarin": "皮蛋",
+      "pinyin": "biàn dàn",
+      "explanation": "河南话（通用常见）说法，意思是「皮蛋」。河南称皮蛋为“变蛋”。",
+      "category": "饮食特产",
+      "region": "通用"
+    },
+    {
+      "dialect": "锅盔",
+      "mandarin": "厚烧饼",
+      "pinyin": "guō kuī",
+      "explanation": "河南话（豫西常见）说法，意思是「厚烧饼」。厚实耐放的烤饼。",
+      "category": "饮食特产",
+      "region": "豫西"
+    },
+    {
+      "dialect": "油馍头",
+      "mandarin": "油条段",
+      "pinyin": "yóu mó tóu",
+      "explanation": "河南话（中原常见）说法，意思是「油条段」。类似油条，短段状。",
+      "category": "饮食特产",
+      "region": "中原"
+    },
+    {
+      "dialect": "菜馍",
+      "mandarin": "菜饼",
+      "pinyin": "cài mó",
+      "explanation": "河南话（通用常见）说法，意思是「菜饼」。面皮包菜烙成的饼。",
+      "category": "饮食特产",
+      "region": "通用"
+    },
+    {
+      "dialect": "糖糕",
+      "mandarin": "炸糖饼",
+      "pinyin": "táng gāo",
+      "explanation": "河南话（通用常见）说法，意思是「炸糖饼」。糯米面炸的甜饼。",
+      "category": "饮食特产",
+      "region": "通用"
+    },
+    {
+      "dialect": "水煎包",
+      "mandarin": "水煎包子",
+      "pinyin": "shuǐ jiān bāo",
+      "explanation": "河南话（中原常见）说法，意思是「水煎包子」。底部焦脆的煎包。",
+      "category": "饮食特产",
+      "region": "中原"
+    },
+    {
+      "dialect": "糊涂",
+      "mandarin": "面汤",
+      "pinyin": "hú tu",
+      "explanation": "河南话（通用常见）说法，意思是「面汤」。玉米面搅成的稀饭。",
+      "category": "饮食特产",
+      "region": "通用"
+    },
+    {
+      "dialect": "麻烫",
+      "mandarin": "油条",
+      "pinyin": "má tang",
+      "explanation": "河南话（豫北常见）说法，意思是「油条」。豫北部分地区称油条为“麻烫”。",
+      "category": "饮食特产",
+      "region": "豫北"
+    },
+    {
+      "dialect": "豆沫",
+      "mandarin": "豆面粥",
+      "pinyin": "dòu mò",
+      "explanation": "河南话（中原常见）说法，意思是「豆面粥」。小米面加豆类的咸粥。",
+      "category": "饮食特产",
+      "region": "中原"
+    },
+    {
+      "dialect": "恁",
+      "mandarin": "那么",
+      "pinyin": "nèn",
+      "explanation": "河南话（通用常见）说法，意思是「那么」。“恁大”即那么大。",
+      "category": "程度评价",
+      "region": "通用"
+    },
+    {
+      "dialect": "咱乐",
+      "mandarin": "这样",
+      "pinyin": "zhè lè",
+      "explanation": "河南话（豫南常见）说法，意思是「这样」。“咱乐弄”即这么办。",
+      "category": "程度评价",
+      "region": "豫南"
+    },
+    {
+      "dialect": "哏",
+      "mandarin": "有趣",
+      "pinyin": "gén",
+      "explanation": "河南话（豫北常见）说法，意思是「有趣」。“这人真哏”即这人真逗。",
+      "category": "程度评价",
+      "region": "豫北"
+    },
+    {
+      "dialect": "排场",
+      "mandarin": "体面 / 好看",
+      "pinyin": "pái chang",
+      "explanation": "河南话（通用常见）说法，意思是「体面 / 好看」。“排场”指场面大、人俊。",
+      "category": "程度评价",
+      "region": "通用"
+    },
+    {
+      "dialect": "滋润",
+      "mandarin": "舒服",
+      "pinyin": "zī run",
+      "explanation": "河南话（通用常见）说法，意思是「舒服」。生活安逸叫“滋润”。",
+      "category": "程度评价",
+      "region": "通用"
+    },
+    {
+      "dialect": "得发",
+      "mandarin": "舒服",
+      "pinyin": "dé fa",
+      "explanation": "河南话（豫南常见）说法，意思是「舒服」。同“得劲儿”，豫南说法。",
+      "category": "程度评价",
+      "region": "豫南"
+    },
+    {
+      "dialect": "鲜亮",
+      "mandarin": "漂亮 / 鲜艳",
+      "pinyin": "xiān liang",
+      "explanation": "河南话（通用常见）说法，意思是「漂亮 / 鲜艳」。颜色鲜、人俊都叫“鲜亮”。",
+      "category": "程度评价",
+      "region": "通用"
+    },
+    {
+      "dialect": "魔道",
+      "mandarin": "糊涂 / 反常",
+      "pinyin": "mó dao",
+      "explanation": "河南话（通用常见）说法，意思是「糊涂 / 反常」。“魔道了”指人犯迷糊、不对劲。",
+      "category": "情绪心理",
+      "region": "通用"
+    },
+    {
+      "dialect": "潮巴",
+      "mandarin": "傻",
+      "pinyin": "cháo ba",
+      "explanation": "河南话（豫东常见）说法，意思是「傻」。形容人傻乎乎的。",
+      "category": "情绪心理",
+      "region": "豫东"
+    },
+    {
+      "dialect": "信球",
+      "mandarin": "傻",
+      "pinyin": "xìn qiú",
+      "explanation": "河南话（中原常见）说法，意思是「傻」。郑州一带常用，骂人傻。",
+      "category": "情绪心理",
+      "region": "中原"
+    },
+    {
+      "dialect": "各意",
+      "mandarin": "讨厌 / 膈应",
+      "pinyin": "gè yi",
+      "explanation": "河南话（通用常见）说法，意思是「讨厌 / 膈应」。“各意人”即招人烦。",
+      "category": "情绪心理",
+      "region": "通用"
+    },
+    {
+      "dialect": "腻歪",
+      "mandarin": "厌烦",
+      "pinyin": "nì wai",
+      "explanation": "河南话（通用常见）说法，意思是「厌烦」。腻烦、不想理。",
+      "category": "情绪心理",
+      "region": "通用"
+    },
+    {
+      "dialect": "晌午",
+      "mandarin": "中午",
+      "pinyin": "shǎng wu",
+      "explanation": "河南话（通用常见）说法，意思是「中午」。“晌午”即中午。",
+      "category": "时间方位",
+      "region": "通用"
+    },
+    {
+      "dialect": "后晌",
+      "mandarin": "下午 / 晚上",
+      "pinyin": "hòu shang",
+      "explanation": "河南话（通用常见）说法，意思是「下午 / 晚上」。“后晌”指午后或晚上。",
+      "category": "时间方位",
+      "region": "通用"
+    },
+    {
+      "dialect": "年下",
+      "mandarin": "春节",
+      "pinyin": "nián xia",
+      "explanation": "河南话（通用常见）说法，意思是「春节」。过年期间叫“年下”。",
+      "category": "时间方位",
+      "region": "通用"
+    },
+    {
+      "dialect": "见天",
+      "mandarin": "每天",
+      "pinyin": "jiàn tiān",
+      "explanation": "河南话（通用常见）说法，意思是「每天」。“见天跑”即天天跑。",
+      "category": "时间方位",
+      "region": "通用"
+    },
+    {
+      "dialect": "成天",
+      "mandarin": "整天",
+      "pinyin": "chéng tiān",
+      "explanation": "河南话（通用常见）说法，意思是「整天」。“成天忙”即整天忙。",
+      "category": "时间方位",
+      "region": "通用"
+    },
+    {
+      "dialect": "赶明儿",
+      "mandarin": "明天",
+      "pinyin": "gǎn míngr",
+      "explanation": "河南话（通用常见）说法，意思是「明天」。“赶明儿见”即明天见。",
+      "category": "时间方位",
+      "region": "通用"
+    },
+    {
+      "dialect": "擦黑儿",
+      "mandarin": "傍晚",
+      "pinyin": "cā hēir",
+      "explanation": "河南话（豫北常见）说法，意思是「傍晚」。天快黑时叫“擦黑儿”。",
+      "category": "时间方位",
+      "region": "豫北"
+    },
+    {
+      "dialect": "雹子",
+      "mandarin": "冰雹",
+      "pinyin": "báo zi",
+      "explanation": "河南话（通用常见）说法，意思是「冰雹」。“下雹子”即下冰雹。",
+      "category": "自然气象",
+      "region": "通用"
+    },
+    {
+      "dialect": "蒙星雨",
+      "mandarin": "毛毛雨",
+      "pinyin": "méng xīng yǔ",
+      "explanation": "河南话（豫南常见）说法，意思是「毛毛雨」。极细的小雨。",
+      "category": "自然气象",
+      "region": "豫南"
+    },
+    {
+      "dialect": "月黑头",
+      "mandarin": "没月亮的夜",
+      "pinyin": "yuè hēi tóu",
+      "explanation": "河南话（豫西常见）说法，意思是「没月亮的夜」。夜里无月叫“月黑头”。",
+      "category": "自然气象",
+      "region": "豫西"
+    },
+    {
+      "dialect": "响雷",
+      "mandarin": "打雷",
+      "pinyin": "xiǎng léi",
+      "explanation": "河南话（通用常见）说法，意思是「打雷」。“响雷了”即打雷了。",
+      "category": "自然气象",
+      "region": "通用"
+    },
+    {
+      "dialect": "耩地",
+      "mandarin": "播种",
+      "pinyin": "jiǎng dì",
+      "explanation": "河南话（通用常见）说法，意思是「播种」。用耧播种叫“耩地”。",
+      "category": "农事劳作",
+      "region": "通用"
+    },
+    {
+      "dialect": "薅草",
+      "mandarin": "拔草",
+      "pinyin": "hāo cǎo",
+      "explanation": "河南话（通用常见）说法，意思是「拔草」。“薅草”即除草。",
+      "category": "农事劳作",
+      "region": "通用"
+    },
+    {
+      "dialect": "摊场",
+      "mandarin": "摊开晒粮",
+      "pinyin": "tān cháng",
+      "explanation": "河南话（通用常见）说法，意思是「摊开晒粮」。把收的粮食摊在场院晒。",
+      "category": "农事劳作",
+      "region": "通用"
+    },
+    {
+      "dialect": "扬场",
+      "mandarin": "扬谷",
+      "pinyin": "yáng cháng",
+      "explanation": "河南话（通用常见）说法，意思是「扬谷」。借风扬去谷壳。",
+      "category": "农事劳作",
+      "region": "通用"
+    },
+    {
+      "dialect": "辘轳",
+      "mandarin": "井上吊水装置",
+      "pinyin": "lù lu",
+      "explanation": "河南话（通用常见）说法，意思是「井上吊水装置」。井边提水的滑轮。",
+      "category": "农事劳作",
+      "region": "通用"
+    },
+    {
+      "dialect": "铡刀",
+      "mandarin": "切草刀",
+      "pinyin": "zhá dāo",
+      "explanation": "河南话（通用常见）说法，意思是「切草刀」。切饲草的大刀。",
+      "category": "农事劳作",
+      "region": "通用"
+    },
+    {
+      "dialect": "麦客",
+      "mandarin": "收麦雇工",
+      "pinyin": "mài kè",
+      "explanation": "河南话（豫西常见）说法，意思是「收麦雇工」。旧时帮忙割麦的短工。",
+      "category": "农事劳作",
+      "region": "豫西"
+    },
+    {
+      "dialect": "坷垃",
+      "mandarin": "土块",
+      "pinyin": "kē la",
+      "explanation": "河南话（通用常见）说法，意思是「土块」。“土坷垃”即土块。",
+      "category": "农事劳作",
+      "region": "通用"
+    },
+    {
+      "dialect": "胳老肢",
+      "mandarin": "腋下",
+      "pinyin": "gē lao zhi",
+      "explanation": "河南话（通用常见）说法，意思是「腋下」。“胳老肢”即胳肢窝。",
+      "category": "身体疾病",
+      "region": "通用"
+    },
+    {
+      "dialect": "脖梗",
+      "mandarin": "后颈",
+      "pinyin": "bó gěng",
+      "explanation": "河南话（通用常见）说法，意思是「后颈」。“脖梗”即脖子后段。",
+      "category": "身体疾病",
+      "region": "通用"
+    },
+    {
+      "dialect": "眼眨毛",
+      "mandarin": "睫毛",
+      "pinyin": "yǎn zhǎ máo",
+      "explanation": "河南话（通用常见）说法，意思是「睫毛」。“眼眨毛”即睫毛。",
+      "category": "身体疾病",
+      "region": "通用"
+    },
+    {
+      "dialect": "嘴筒子",
+      "mandarin": "嘴",
+      "pinyin": "zuǐ tǒng zi",
+      "explanation": "河南话（豫东常见）说法，意思是「嘴」。俗称嘴为“嘴筒子”。",
+      "category": "身体疾病",
+      "region": "豫东"
+    },
+    {
+      "dialect": "脚骨拐",
+      "mandarin": "踝",
+      "pinyin": "jiǎo gǔ guǎi",
+      "explanation": "河南话（通用常见）说法，意思是「踝」。脚踝骨叫“脚骨拐”。",
+      "category": "身体疾病",
+      "region": "通用"
+    },
+    {
+      "dialect": "圪瘩",
+      "mandarin": "硬块 / 包",
+      "pinyin": "gē da",
+      "explanation": "河南话（通用常见）说法，意思是「硬块 / 包」。“起个圪瘩”即起包。",
+      "category": "身体疾病",
+      "region": "通用"
+    },
+    {
+      "dialect": "发疟子",
+      "mandarin": "疟疾",
+      "pinyin": "fā yào zi",
+      "explanation": "河南话（通用常见）说法，意思是「疟疾」。“发疟子”即打摆子。",
+      "category": "身体疾病",
+      "region": "通用"
+    },
+    {
+      "dialect": "厦子",
+      "mandarin": "偏房",
+      "pinyin": "shà zi",
+      "explanation": "河南话（豫西常见）说法，意思是「偏房」。正房旁的矮房叫“厦子”。",
+      "category": "居家环境",
+      "region": "豫西"
+    },
+    {
+      "dialect": "茅厮",
+      "mandarin": "厕所",
+      "pinyin": "máo sī",
+      "explanation": "河南话（通用常见）说法，意思是「厕所」。“茅厮”即茅房。",
+      "category": "居家环境",
+      "region": "通用"
+    },
+    {
+      "dialect": "影壁",
+      "mandarin": "照壁",
+      "pinyin": "yǐng bì",
+      "explanation": "河南话（通用常见）说法，意思是「照壁」。院门内的挡墙。",
+      "category": "居家环境",
+      "region": "通用"
+    },
+    {
+      "dialect": "锅台",
+      "mandarin": "灶台",
+      "pinyin": "guō tái",
+      "explanation": "河南话（通用常见）说法，意思是「灶台」。做饭的台子。",
+      "category": "居家环境",
+      "region": "通用"
+    },
+    {
+      "dialect": "案板",
+      "mandarin": "砧板",
+      "pinyin": "àn bǎn",
+      "explanation": "河南话（通用常见）说法，意思是「砧板」。切菜板。",
+      "category": "居家环境",
+      "region": "通用"
+    },
+    {
+      "dialect": "箩头",
+      "mandarin": "箩筐",
+      "pinyin": "luó tóu",
+      "explanation": "河南话（通用常见）说法，意思是「箩筐」。竹编提筐。",
+      "category": "居家环境",
+      "region": "通用"
+    },
+    {
+      "dialect": "条帚",
+      "mandarin": "扫帚",
+      "pinyin": "tiáo zhou",
+      "explanation": "河南话（通用常见）说法，意思是「扫帚」。“条帚”即扫帚。",
+      "category": "居家环境",
+      "region": "通用"
+    },
+    {
+      "dialect": "咧",
+      "mandarin": "呢 / 了",
+      "pinyin": "lie",
+      "explanation": "河南话（通用常见）说法，意思是「呢 / 了」。“干啥咧”即干啥呢。",
+      "category": "虚词助词",
+      "region": "通用"
+    },
+    {
+      "dialect": "嘞",
+      "mandarin": "的",
+      "pinyin": "lei",
+      "explanation": "河南话（通用常见）说法，意思是「的」。“我嘞”即我的。",
+      "category": "虚词助词",
+      "region": "通用"
+    },
+    {
+      "dialect": "每",
+      "mandarin": "没",
+      "pinyin": "měi",
+      "explanation": "河南话（豫南常见）说法，意思是「没」。部分豫南“没”读作“每”。",
+      "category": "虚词助词",
+      "region": "豫南"
+    },
+    {
+      "dialect": "嫑",
+      "mandarin": "不要",
+      "pinyin": "báo",
+      "explanation": "河南话（豫北常见）说法，意思是「不要」。“嫑去”即不要去。",
+      "category": "虚词助词",
+      "region": "豫北"
+    },
+    {
+      "dialect": "甭",
+      "mandarin": "不用",
+      "pinyin": "béng",
+      "explanation": "河南话（通用常见）说法，意思是「不用」。“甭管”即不用管。",
+      "category": "虚词助词",
+      "region": "通用"
+    },
+    {
+      "dialect": "咋",
+      "mandarin": "怎么",
+      "pinyin": "zǎ",
+      "explanation": "河南话（通用常见）说法，意思是「怎么」。“咋弄”即怎么弄。",
+      "category": "虚词助词",
+      "region": "通用"
+    },
+    {
+      "dialect": "夯",
+      "mandarin": "这么",
+      "pinyin": "hāng",
+      "explanation": "河南话（豫西常见）说法，意思是「这么」。“夯大”即这么大。",
+      "category": "虚词助词",
+      "region": "豫西"
+    },
+    {
+      "dialect": "央",
+      "mandarin": "请 / 托",
+      "pinyin": "yāng",
+      "explanation": "河南话（通用常见）说法，意思是「请 / 托」。“央人帮忙”即求人帮忙。",
+      "category": "虚词助词",
+      "region": "通用"
+    },
+    {
+      "dialect": "鳖孙",
+      "mandarin": "骂人语",
+      "pinyin": "biē sūn",
+      "explanation": "河南话（通用常见）说法，意思是「骂人语」。“鳖孙”是常见骂词。",
+      "category": "骂詈调侃",
+      "region": "通用"
+    },
+    {
+      "dialect": "龟孙",
+      "mandarin": "骂人语",
+      "pinyin": "guī sūn",
+      "explanation": "河南话（通用常见）说法，意思是「骂人语」。“龟孙”同鳖孙。",
+      "category": "骂詈调侃",
+      "region": "通用"
+    },
+    {
+      "dialect": "半熟",
+      "mandarin": "傻 / 缺心眼",
+      "pinyin": "bàn shú",
+      "explanation": "河南话（中原常见）说法，意思是「傻 / 缺心眼」。“半熟”指人犯傻。",
+      "category": "骂詈调侃",
+      "region": "中原"
+    },
+    {
+      "dialect": "去球",
+      "mandarin": "算了 / 拉倒",
+      "pinyin": "qù qiú",
+      "explanation": "河南话（通用常见）说法，意思是「算了 / 拉倒」。“去球”即算了。",
+      "category": "骂詈调侃",
+      "region": "通用"
+    },
+    {
+      "dialect": "去逑",
+      "mandarin": "算了",
+      "pinyin": "qù qiú",
+      "explanation": "河南话（豫西常见）说法，意思是「算了」。同“去球”。",
+      "category": "骂詈调侃",
+      "region": "豫西"
+    },
+    {
+      "dialect": "燎锅底",
+      "mandarin": "新灶第一顿",
+      "pinyin": "liáo guō dǐ",
+      "explanation": "河南话（中原常见）说法，意思是「新灶第一顿」。新灶初次生火做饭的仪式。",
+      "category": "民俗节庆",
+      "region": "中原"
+    },
+    {
+      "dialect": "送羊",
+      "mandarin": "外婆送面羊",
+      "pinyin": "sòng yáng",
+      "explanation": "河南话（豫北常见）说法，意思是「外婆送面羊」。外祖父母给外孙送面羊，寓意孝顺。",
+      "category": "民俗节庆",
+      "region": "豫北"
+    },
+    {
+      "dialect": "骂社火",
+      "mandarin": "对骂表演",
+      "pinyin": "mà shè huǒ",
+      "explanation": "河南话（豫西常见）说法，意思是「对骂表演」。社火中互相嘲骂取乐的民俗。",
+      "category": "民俗节庆",
+      "region": "豫西"
+    },
+    {
+      "dialect": "唱大戏",
+      "mandarin": "演戏",
+      "pinyin": "chàng dà xì",
+      "explanation": "河南话（通用常见）说法，意思是「演戏」。庙会演豫剧叫“唱大戏”。",
+      "category": "民俗节庆",
+      "region": "通用"
+    },
+    {
+      "dialect": "耍把戏",
+      "mandarin": "耍杂技",
+      "pinyin": "shuǎ bǎ xì",
+      "explanation": "河南话（通用常见）说法，意思是「耍杂技」。街头杂耍。",
+      "category": "民俗节庆",
+      "region": "通用"
+    },
+    {
+      "dialect": "长虫",
+      "mandarin": "蛇",
+      "pinyin": "cháng chóng",
+      "explanation": "河南话（通用常见）说法，意思是「蛇」。“长虫”即蛇。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "蚰蜒",
+      "mandarin": "蜈蚣",
+      "pinyin": "yóu yán",
+      "explanation": "河南话（通用常见）说法，意思是「蜈蚣」。“蚰蜒”即蜈蚣。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "蝎虎",
+      "mandarin": "壁虎",
+      "pinyin": "xiē hǔ",
+      "explanation": "河南话（通用常见）说法，意思是「壁虎」。“蝎虎”即壁虎。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "促织",
+      "mandarin": "蟋蟀",
+      "pinyin": "cù zhī",
+      "explanation": "河南话（通用常见）说法，意思是「蟋蟀」。“促织”即蛐蛐。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "屎壳郎",
+      "mandarin": "蜣螂",
+      "pinyin": "shǐ ke làng",
+      "explanation": "河南话（通用常见）说法，意思是「蜣螂」。“屎壳郎”即推粪球的甲虫。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "扁嘴",
+      "mandarin": "鸭",
+      "pinyin": "biǎn zuǐ",
+      "explanation": "河南话（通用常见）说法，意思是「鸭」。“扁嘴”因嘴扁指鸭。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "牤牛",
+      "mandarin": "公牛",
+      "pinyin": "māng niú",
+      "explanation": "河南话（通用常见）说法，意思是「公牛」。“牤牛”即未阉公牛。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "牙狗",
+      "mandarin": "公狗",
+      "pinyin": "yá gǒu",
+      "explanation": "河南话（通用常见）说法，意思是「公狗」。“牙狗”即公狗。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "椿树",
+      "mandarin": "香椿",
+      "pinyin": "chūn shù",
+      "explanation": "河南话（通用常见）说法，意思是「香椿」。“椿树”常指香椿。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "楝子",
+      "mandarin": "苦楝",
+      "pinyin": "liàn zi",
+      "explanation": "河南话（豫南常见）说法，意思是「苦楝」。“楝子”即苦楝树。",
+      "category": "动物植物",
+      "region": "豫南"
+    },
+    {
+      "dialect": "蜀黍",
+      "mandarin": "高粱",
+      "pinyin": "shǔ shu",
+      "explanation": "河南话（通用常见）说法，意思是「高粱」。“蜀黍”即高粱。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "玉蜀黍",
+      "mandarin": "玉米",
+      "pinyin": "yù shǔ shu",
+      "explanation": "河南话（通用常见）说法，意思是「玉米」。“玉蜀黍”即玉米。",
+      "category": "动物植物",
+      "region": "通用"
+    },
+    {
+      "dialect": "些微",
+      "mandarin": "一点",
+      "pinyin": "xiē wēi",
+      "explanation": "河南话（通用常见）说法，意思是「一点」。“些微”即少量。",
+      "category": "数量性状",
+      "region": "通用"
+    },
+    {
+      "dialect": "喷儿香",
+      "mandarin": "很香",
+      "pinyin": "pènr xiāng",
+      "explanation": "河南话（豫北常见）说法，意思是「很香」。“喷儿香”即特别香。",
+      "category": "数量性状",
+      "region": "豫北"
+    },
+    {
+      "dialect": "齁",
+      "mandarin": "太（咸）",
+      "pinyin": "hōu",
+      "explanation": "河南话（通用常见）说法，意思是「太（咸）」。“齁咸”即咸得过头。",
+      "category": "数量性状",
+      "region": "通用"
+    },
+    {
+      "dialect": "怪",
+      "mandarin": "很",
+      "pinyin": "guài",
+      "explanation": "河南话（通用常见）说法，意思是「很」。“怪好”即很好。",
+      "category": "数量性状",
+      "region": "通用"
+    },
+    {
+      "dialect": "熬糟",
+      "mandarin": "磨蹭",
+      "pinyin": "áo zao",
+      "explanation": "河南话（豫东常见）说法，意思是「磨蹭」。“熬糟”指做事拖沓。",
+      "category": "工作学习",
+      "region": "豫东"
+    },
+    {
+      "dialect": "磨叨",
+      "mandarin": "唠叨",
+      "pinyin": "mó dao",
+      "explanation": "河南话（通用常见）说法，意思是「唠叨」。“磨叨”即反复念叨。",
+      "category": "工作学习",
+      "region": "通用"
+    },
+    {
+      "dialect": "趁钱",
+      "mandarin": "有钱",
+      "pinyin": "chèn qián",
+      "explanation": "河南话（通用常见）说法，意思是「有钱」。“趁钱”即有积蓄。",
+      "category": "工作学习",
+      "region": "通用"
+    },
+    {
+      "dialect": "盘缠",
+      "mandarin": "路费",
+      "pinyin": "pán chan",
+      "explanation": "河南话（通用常见）说法，意思是「路费」。“盘缠”即旅费。",
+      "category": "工作学习",
+      "region": "通用"
+    },
+    {
+      "dialect": "营生",
+      "mandarin": "活计 / 事情",
+      "pinyin": "yíng sheng",
+      "explanation": "河南话（通用常见）说法，意思是「活计 / 事情」。“干啥营生”即干啥活。",
+      "category": "工作学习",
+      "region": "通用"
+    },
+    {
+      "dialect": "歇晌",
+      "mandarin": "午休",
+      "pinyin": "xiē shǎng",
+      "explanation": "河南话（通用常见）说法，意思是「午休」。“歇晌”即睡午觉。",
+      "category": "工作学习",
+      "region": "通用"
+    }
+  ],
+  "cities": []
+}

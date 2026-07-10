@@ -1,0 +1,25 @@
+# 本地离线识别（FunASR）可选依赖
+# 仅当你要启用「隐私零上传」的本地识别时才需要安装本文件。
+# 演示 / 云端模式无需它。
+#
+# v2.0 提供两条离线路线，按需安装其一或全部：
+#
+# ① 轻量路线（推荐，torch-free，纯 CPU）：
+#    onnxruntime + kaldi_native_fbank + soundfile + scipy
+#    配合已内置在 assets/asr_models/ 的 Paraformer-ONNX 模型，开箱即用、体积最小。
+# ② 完整路线（torch，效果最佳，体积大）：
+#    funasr（会自动拉取 torch 等）
+#
+# 启用步骤（轻量路线）：
+#   1) 安装 FFmpeg（仅云端/旧 torch 路线转码需要；ONNX 路线用 soundfile 读取，不强制）
+#   2) 安装本依赖：pip install -r requirements-offline.txt
+#   3) 启动：python main.py（ASR_ENGINE=auto 或 offline 即走本地离线）
+
+# —— ① torch-free 轻量离线路线（默认内置模型即此格式）——
+onnxruntime>=1.18
+kaldi_native_fbank>=1.21
+soundfile>=0.12
+scipy>=1.10
+
+# —— ② torch 完整离线路线（可选，需联网首次下载模型）——
+funasr

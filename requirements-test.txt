@@ -1,0 +1,5 @@
+# 单测依赖（轻量）：仅 backend 纯逻辑层（store / correct / demo / dictionary）所需，
+# 不含 PySide6 / onnxruntime 等重型运行时。CI 与本地 `python -m unittest` 使用。
+python-dotenv==1.2.2
+requests==2.34.2
+pypinyin==0.55.0

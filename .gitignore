@@ -1,0 +1,45 @@
+# ── Python 缓存 / 编译产物 ──
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+venv/
+env/
+
+# ── 构建与打包产物 ──
+dist/
+build/
+build_logs/
+*.spec.bak
+_installer/
+
+# ── 应用数据 / 密钥（绝不入库）──
+.env
+*.db
+user_data.json
+data/
+
+# ── 发布大包（通过 release zip 分发，不进 git）──
+releases/
+*.zip
+河南方言语音板_v*/
+
+# ── 离线识别大模型权重（238MB，通过发布包单独分发；克隆后需放入 assets/asr_models/）──
+assets/asr_models/**/*.onnx
+
+# ── 预览图 / 其他二进制 ──
+app_preview.png
+
+# ── 项目记忆（含工作日志，敏感）──
+.workbuddy/
+
+# ── 遗留 / 旧版本（保持主干干净）──
+网页版遗留/
+backend_legacy.py
+
+# ── 编辑器 / OS ──
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

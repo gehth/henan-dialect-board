@@ -1,0 +1,4 @@
+# 开发 / 测试依赖（CI 与本地运行单测用）
+# 注意：单测只覆盖纯逻辑层（store / correct / demo / dictionary），
+# 不需要 PySide6、onnxruntime 等重型运行时；轻量依赖已包含在 requirements.txt。
+pytest>=8.0

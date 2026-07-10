@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>河南方言语音板 · 详细设计</title>
+<style>
+  :root{
+    --bg:#0b0f12;--panel:#11171c;--panel-2:#0e1419;--line:#1d2a30;
+    --green:#2ee6a6;--green-dim:#1c9e74;--green-glow:rgba(46,230,166,.18);
+    --txt:#cfe9e0;--txt-dim:#7c9a90;--warn:#ffb454;--blue:#7fd6ff;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:var(--bg);}
+  body{
+    font-family:"Cascadia Code","Consolas","JetBrains Mono","Microsoft YaHei","PingFang SC",monospace;
+    color:var(--txt);line-height:1.7;padding:2cm;max-width:840px;margin:0 auto;
+  }
+  ::selection{background:var(--green);color:#04130d;}
+  .topbar{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);
+    background:linear-gradient(90deg,var(--panel-2),var(--panel));padding:10px 14px;border-radius:8px;
+    font-size:12px;color:var(--txt-dim);letter-spacing:.5px;}
+  .topbar .dot{color:var(--green);}
+  .topbar b{color:var(--green);}
+  h1{font-size:23px;margin:22px 0 4px;color:#eafff7;letter-spacing:1px;}
+  h1 .tag{font-size:11px;background:var(--green-glow);color:var(--green);border:1px solid var(--green-dim);
+    padding:2px 8px;border-radius:20px;vertical-align:middle;margin-left:8px;}
+  .sub{color:var(--txt-dim);font-size:13px;margin:0 0 18px;}
+  h2{font-size:15px;color:var(--green);border-left:3px solid var(--green);padding-left:10px;margin:30px 0 12px;}
+  h3{font-size:13.5px;color:#eafff7;margin:14px 0 6px;}
+  .panel{border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:14px 16px;margin:12px 0;}
+  .panel.blue{border-color:#16303a;background:linear-gradient(180deg,#0c1820,#0a1318);}
+  .panel.ghost{background:transparent;}
+
+  /* 关键指标行 */
+  .kpis{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0;}
+  .kpi{flex:1;min-width:120px;border:1px solid var(--line);border-radius:10px;background:var(--panel-2);padding:10px 12px;}
+  .kpi .n{font-size:19px;color:var(--green);font-weight:700;}
+  .kpi .l{font-size:11.5px;color:var(--txt-dim);}
+
+  /* 功能清单 */
+  .feat{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed var(--line);}
+  .feat:last-child{border-bottom:none;}
+  .feat .ic{color:var(--green);font-weight:700;min-width:22px;}
+  .feat b{color:#eafff7;}
+  .feat .d{color:var(--txt-dim);font-size:12.5px;}
+
+  /* 路线对比表 */
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12.5px;}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+  th{background:var(--panel-2);color:var(--green);font-weight:600;}
+  td{color:var(--txt);}
+  tr:nth-child(even) td{background:rgba(46,230,166,.03);}
+  .yes{color:var(--green);} .no{color:#ff6b6b;} .mid{color:var(--warn);}
+
+  /* 架构流 */
+  .flow{border:1px solid var(--line);border-radius:10px;background:var(--panel-2);padding:10px;margin:10px 0;}
+  svg{display:block;width:100%;height:auto;}
+
+  /* 步骤 */
+  .steps{counter-reset:s;list-style:none;padding:0;margin:10px 0;}
+  .steps li{counter-increment:s;padding:9px 0 9px 34px;position:relative;border-bottom:1px dashed var(--line);font-size:13px;}
+  .steps li:last-child{border-bottom:none;}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:8px;width:22px;height:22px;border-radius:50%;
+    border:1px solid var(--green-dim);color:var(--green);background:var(--green-glow);
+    display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .kbd{background:#0a0f12;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--green);font-size:12px;}
+
+  /* 路线卡 */
+  .route{border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:13px 14px;margin:10px 0;}
+  .route.a::before,.route.b::before{content:"";display:block;width:100%;height:3px;border-radius:2px;margin-bottom:10px;}
+  .route.a::before{background:var(--green-dim);}
+  .route.b::before{background:var(--blue);}
+  .route h3{margin:0 0 8px;}
+  .route .t{font-size:11.5px;color:var(--txt-dim);margin-bottom:6px;}
+
+  .adv{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0;}
+  @media(max-width:680px){.adv{grid-template-columns:1fr;}}
+  .adv .card{border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:11px 13px;}
+  .adv .card h3{margin:0 0 5px;font-size:13px;}
+  .adv .card p{margin:0;font-size:12.3px;color:var(--txt-dim);}
+
+  footer{margin-top:28px;border-top:1px solid var(--line);padding-top:12px;color:var(--txt-dim);font-size:11.5px;text-align:center;}
+  .note{font-size:12px;color:var(--txt-dim);border-left:2px solid var(--warn);padding-left:10px;margin:8px 0;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><span class="dot">●</span> 项目详情 / HENAN_DIALECT_BOARD</span>
+  <span>更新 <b>2026-07-07</b> · 关联 <b>冷门AI项目方向雷达</b></span>
+</div>
+
+<h1>河南方言 / 家乡话语音板<span class="tag">详细设计</span></h1>
+<p class="sub">把"说家乡话"变成可听、可读、可学、可分享的数字卡片。一个贴着你的地域、几乎没人做的 AI 练手项目。</p>
+
+<div class="kpis">
+  <div class="kpi"><div class="n">▲▲▲</div><div class="l">冷门指数（极少同款）</div></div>
+  <div class="kpi"><div class="n">低→中</div><div class="l">上手难度（API 路线很低）</div></div>
+  <div class="kpi"><div class="n">4 类</div><div class="l">AI 能力覆盖（ASR/翻译/释义/生成）</div></div>
+  <div class="kpi"><div class="n">1 周</div><div class="l">MVP 周期（API 路线）</div></div>
+</div>
+
+<div class="panel">
+  <h3 style="margin-top:0">📌 一句话定位</h3>
+  <p style="font-size:13.5px;margin:4px 0;color:var(--txt)">
+  用户用浏览器/手机<b style="color:#eafff7">录一段河南话</b>，系统自动：<b style="color:var(--green)">转写成方言字 → 给出普通话对照 + 拼音 → 用大模型解释词义/用法/出处 → 生成一张可分享的"方言卡片"</b>。既能保护濒危方言，又是极好的 AI 技术作品。
+  </p>
+</div>
+
+<h2>① 为什么值得做（少有人碰的真相）</h2>
+<div class="panel ghost">
+  <div class="feat"><span class="ic">▸</span><div><b>地域强绑定，天然不撞车。</b><span class="d"> 做"通用语音转文字"的人一堆，做"河南话→普通话→释义→卡片"的几乎没有。你的籍贯本身就是护城河。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>叙事极好听。</b><span class="d"> "用 AI 做方言保护/文化传承"是比赛、作品集、面试里很加分的主题，比"又一个小工具"高一个维度。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>技术含量看得见。</b><span class="d"> 涉及语音识别(ASR)、机器翻译、LLM 释义、前端录音与渲染——一条链路把多个 AI 能力串起来，简历上能写清楚。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>能真用、能落地。</b><span class="d"> 给长辈录、给外地朋友科普、做方言收集小程序，都有真实用户。</span></div></div>
+</div>
+
+<h2>② 核心功能模块</h2>
+<div class="panel">
+  <div class="feat"><span class="ic">🎙</span><div><b>录音 / 上传</b><span class="d"> 浏览器 <span class="kbd">getUserMedia</span> 录音或传音频文件；支持"长辈模式"大按钮。</span></div></div>
+  <div class="feat"><span class="ic">🔤</span><div><b>方言转写</b><span class="d"> 调方言 ASR，输出方言汉字（如"中""恁""弄啥嘞"）。</span></div></div>
+  <div class="feat"><span class="ic">🔁</span><div><b>普通话对照 + 拼音</b><span class="d"> 把方言句翻成普通话并标拼音，方便不懂的人看懂。</span></div></div>
+  <div class="feat"><span class="ic">📖</span><div><b>词义释义</b><span class="d"> LLM 解释生僻方言词的含义、使用场景、来源（可标注"需人工校对"）。</span></div></div>
+  <div class="feat"><span class="ic">🃏</span><div><b>方言卡片生成</b><span class="d"> 一键生成带方言/拼音/释义/插画的分享卡片（长图），可存图或转发。</span></div></div>
+  <div class="feat"><span class="ic">🗺</span><div><b>方言地图（进阶）</b><span class="d"> 收集不同地市说法（郑州/洛阳/信阳口音差异），做成可点地图。</span></div></div>
+</div>
+
+<h2>③ 技术架构（数据流）</h2>
+<div class="flow">
+<svg viewBox="0 0 680 180" role="img" aria-label="技术架构流">
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2ee6a6"/>
+    </marker>
+  </defs>
+  <!-- 节点 -->
+  <rect x="10" y="70" width="100" height="44" rx="8" fill="#0e1419" stroke="#1d2a30"/>
+  <text x="60" y="92" fill="#cfe9e0" font-size="12" text-anchor="middle">🎙 录音</text>
+  <text x="60" y="107" fill="#7c9a90" font-size="10" text-anchor="middle">浏览器/手机</text>
+
+  <rect x="150" y="70" width="110" height="44" rx="8" fill="#0e1419" stroke="#1c9e74"/>
+  <text x="205" y="90" fill="#2ee6a6" font-size="12" text-anchor="middle">方言 ASR</text>
+  <text x="205" y="106" fill="#7c9a90" font-size="10" text-anchor="middle">讯飞/百度/FunASR</text>
+
+  <rect x="300" y="70" width="110" height="44" rx="8" fill="#0e1419" stroke="#1d2a30"/>
+  <text x="355" y="90" fill="#cfe9e0" font-size="12" text-anchor="middle">翻译+拼音</text>
+  <text x="355" y="106" fill="#7c9a90" font-size="10" text-anchor="middle">规则/LLM</text>
+
+  <rect x="450" y="70" width="110" height="44" rx="8" fill="#0e1419" stroke="#1d2a30"/>
+  <text x="505" y="90" fill="#cfe9e0" font-size="12" text-anchor="middle">LLM 释义</text>
+  <text x="505" y="106" fill="#7c9a90" font-size="10" text-anchor="middle">大模型 API</text>
+
+  <rect x="590" y="70" width="80" height="44" rx="8" fill="#0e1419" stroke="#1c9e74"/>
+  <text x="630" y="90" fill="#2ee6a6" font-size="12" text-anchor="middle">🃏 卡片</text>
+  <text x="630" y="106" fill="#7c9a90" font-size="10" text-anchor="middle">前端渲染</text>
+
+  <!-- 箭头 -->
+  <line x1="110" y1="92" x2="148" y2="92" stroke="#2ee6a6" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="260" y1="92" x2="298" y2="92" stroke="#7c9a90" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="410" y1="92" x2="448" y2="92" stroke="#7c9a90" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="560" y1="92" x2="588" y2="92" stroke="#2ee6a6" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <text x="205" y="150" fill="#7c9a90" font-size="11" text-anchor="middle">① 语音 → 文字（ASR，技术核心）</text>
+  <text x="505" y="150" fill="#7c9a90" font-size="11" text-anchor="middle">② 文字 → 知识（LLM，价值核心）</text>
+</svg>
+</div>
+
+<h2>④ 两条技术路线（实测可行）</h2>
+
+<div class="route a">
+  <h3>🅰 云端 API 路线（推荐先做 MVP）</h3>
+  <div class="t">最快出活，难度低，适合一周内跑通主流程。</div>
+  <div class="feat"><span class="ic">▸</span><div><b>ASR：讯飞语音听写 / 百度短语音识别</b><span class="d"> 均支持河南话等方言。讯飞开放平台注册→建应用拿 APPID/APIKey，按文档传音频拿结果。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>释义/对照/卡片文案：大模型 API</b><span class="d"> 通义千问、DeepSeek、智谱等，把方言语句+指令发过去，返回普通话、拼音、释义、卡片文案。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>前端：单文件 HTML</b><span class="d"> 录音→调后端代理（保护 key）→渲染结果→生成卡片图（Canvas）。</span></div></div>
+  <p class="note">⚠️ API Key 不能直接写在前端（会泄露）。学生 demo 可先放本地一个小后端/Serverless 函数做代理，或仅在本地测试时用。</p>
+</div>
+
+<div class="route b">
+  <h3>🅱 本地离线路线（进阶亮点）</h3>
+  <div class="t">开源、零上传、还能自己训方言模型——简历上很能打。</div>
+  <div class="feat"><span class="ic">▸</span><div><b>ASR：FunASR（阿里达摩院开源）</b><span class="d"> 工业级、支持方言，<span class="kbd">pip install funasr</span> 即可跑；社区已有粤语/客家话微调模型，可参考自建河南话模型。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>释义：本地小模型 / 本地大模型</b><span class="d"> 如 Ollama 跑 qwen2.5 等，全程离线。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>价值</b><span class="d"> "隐私零上传 + 可训练方言识别模型"是两个强卖点，适合当毕业设计/比赛作品。</span></div></div></div>
+  <p class="note">⚠️ 本地部署需一定算力（CPU 可跑小模型，GPU 更快）；自己训练方言模型要准备方言音频数据，工作量更大。</p>
+</div>
+
+<div class="panel blue">
+  <h3 style="margin-top:0">📊 路线对比速查</h3>
+  <table>
+    <tr><th>维度</th><th>🅰 云端 API</th><th>🅱 本地 FunASR</th></tr>
+    <tr><td>上手速度</td><td class="yes">快（几天）</td><td class="mid">较慢（环境+调通）</td></tr>
+    <tr><td>方言识别精度</td><td class="yes">高（厂商已训好）</td><td class="mid">中（通用模型），自训可高</td></tr>
+    <tr><td>费用</td><td class="mid">有免费额度，超量付费</td><td class="yes">免费（耗算力）</td></tr>
+    <tr><td>隐私</td><td class="mid">音频上传云端</td><td class="yes">全程本地</td></tr>
+    <tr><td>差异化卖点</td><td class="mid">功能完整、能分享</td><td class="yes">离线+可自训模型</td></tr>
+    <tr><td>推荐阶段</td><td class="yes">MVP / 先验证</td><td class="mid">进阶 / 作品集升级</td></tr>
+  </table>
+</div>
+
+<h2>⑤ 数据从哪来</h2>
+<div class="panel">
+  <div class="feat"><span class="ic">▸</span><div><b>你自己录</b><span class="d"> 找家人/同学录日常对话，最真实也最贴合"家乡话"。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>公开数据集</b><span class="d"> 搜索"河南方言 语音 数据集""方言 recognition corpus"，或中文方言相关学术开源集（注意授权）。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>众包收集</b><span class="d"> 项目做出来后，让访客"贡献一句家乡话"，自然积累语料。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>释义知识</b><span class="d"> 初期靠 LLM 生成+人工校对；长期可沉淀为本地方言词库 JSON（越积越值钱）。</span></div></div>
+</div>
+
+<h2>⑥ MVP 实施步骤（手把手）</h2>
+<ol class="steps">
+  <li><b>注册 ASR</b>：讯飞/百度开放平台建应用，拿到 APPID/APIKey，跑通官方"语音识别"示例。</li>
+  <li><b>前端录音</b>：单文件 HTML 用 <span class="kbd">getUserMedia</span> 录 5 秒音频，导出 <span class="kbd">.wav/.pcm</span>。</li>
+  <li><b>接 ASR</b>：前端把音频发到你的小后端/代理，代理带 key 调讯飞，返回方言文字。</li>
+  <li><b>接 LLM</b>：把方言文字 + 提示词（"翻译成普通话、标拼音、解释生僻词"）发给大模型，解析返回。</li>
+  <li><b>渲染结果</b>：页面分栏展示 方言 / 普通话 / 拼音 / 释义，先能看。</li>
+  <li><b>生成卡片</b>：用 Canvas 把以上内容拼成一张长图，支持"保存图片"。</li>
+  <li><b>打磨 & 开源</b>：加大按钮"长辈模式"、补 README、GitHub 发布，进项目列表。</li>
+</ol>
+
+<h2>⑦ 进阶玩法（让作品更厚）</h2>
+<div class="adv">
+  <div class="card"><h3>🗺 方言地图</h3><p>标注河南各地市说法差异（"喝水/喝fei""昨天/夜儿个"），做成可点击地图。</p></div>
+  <div class="card"><h3>🎮 猜方言小游戏</h3><p>播放方言音频→选意思，寓教于乐，易传播。</p></div>
+  <div class="card"><h3>📚 方言词库 JSON</h3><p>沉淀结构化词库，越用越准，是独特资产。</p></div>
+  <div class="card"><h3>🎨 AI 配图卡片</h3><p>用图像生成给每张方言卡配乡土插画，分享欲拉满。</p></div>
+  <div class="card"><h3>🧩 自建识别模型</h3><p>用 FunASR + 自录数据微调河南话模型，毕业设计级。</p></div>
+  <div class="card"><h3>♿ 无障碍延伸</h3><p>长辈不会打字，用方言语音直接查东西，公益属性强。</p></div>
+</div>
+
+<h2>⑧ 难点与对策</h2>
+<table>
+  <tr><th>难点</th><th>对策</th></tr>
+  <tr><td>方言 ASR 准确率有限</td><td>选已支持河南话的厂商 API；结果经 LLM 二次纠错；标注"仅供参考"。</td></tr>
+  <tr><td>生僻词 LLM 会编</td><td>输出加"需人工校对"；沉淀可信词库覆盖高频词。</td></tr>
+  <tr><td>API Key 安全</td><td>经后端/Serverless 代理调用，不在前端硬编码。</td></tr>
+  <tr><td>方言写法不统一</td><td>以"音近字+拼音+释义"为主，不强行规范汉字。</td></tr>
+  <tr><td>语料不足</td><td>先自己录 20–50 条跑通闭环，再众包扩展。</td></tr>
+</table>
+
+<h2>⑨ 怎么写进简历 / 作品集</h2>
+<div class="panel">
+  <p style="font-size:13px;margin:4px 0;color:var(--txt)">一句话模板：</p>
+  <p style="font-size:13px;margin:6px 0;color:#eafff7;background:var(--green-glow);border:1px solid var(--green-dim);border-radius:8px;padding:10px 12px">
+  "独立开发<b>河南方言语音板</b>：基于讯飞方言 ASR + 大模型释义，将方言语音转为可读可分享的卡片，服务方言保护与科普；支持离线 FunASR 部署，已开源。"
+  </p>
+  <p class="note">关键词覆盖：语音识别(ASR)、Prompt 工程、前端录音、Canvas 渲染、开源协作、文化传承叙事——面试官爱问。</p>
+</div>
+
+<h2>⑩ 真实落地场景</h2>
+<div class="panel ghost">
+  <div class="feat"><span class="ic">▸</span><div><b>给家人</b><span class="d"> 帮不擅长打字的长辈"说句话"留存成文字/卡片。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>给外地朋友</b><span class="d"> 科普"河南话不是土，是有来源的中原官话"。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>给学校/比赛</b><span class="d"> 作为"AI+非遗/方言保护"作品参赛或展示。</span></div></div>
+  <div class="feat"><span class="ic">▸</span><div><b>给自己</b><span class="d"> 练通 ASR→LLM→前端 全链路，技术债务为零、故事感拉满。</span></div></div>
+</div>
+
+<footer>
+  HENAN_DIALECT_BOARD · 由 WorkBuddy 生成 · 暗灰/翠绿情报终端风格<br>
+  关联文档：冷门AI项目方向雷达.html · 技术数据经 WebSearch 核实（讯飞/百度/FunASR 方言能力）
+</footer>
+
+</body>
+</html>

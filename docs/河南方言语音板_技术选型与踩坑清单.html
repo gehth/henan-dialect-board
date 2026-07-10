@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>技术选型 &amp; 踩坑清单 · 河南方言语音板</title>
+<style>
+  :root{
+    --bg:#0b0f12;--panel:#11171c;--panel-2:#0e1419;--line:#1d2a30;
+    --green:#2ee6a6;--green-dim:#1c9e74;--green-glow:rgba(46,230,166,.18);
+    --txt:#cfe9e0;--txt-dim:#7c9a90;--warn:#ffb454;--bad:#ff6b6b;--blue:#7fd6ff;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;background:var(--bg);}
+  body{
+    font-family:"Cascadia Code","Consolas","JetBrains Mono","Microsoft YaHei","PingFang SC",monospace;
+    color:var(--txt);line-height:1.7;padding:2cm;max-width:840px;margin:0 auto;
+  }
+  ::selection{background:var(--green);color:#04130d;}
+  .topbar{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);
+    background:linear-gradient(90deg,var(--panel-2),var(--panel));padding:10px 14px;border-radius:8px;
+    font-size:12px;color:var(--txt-dim);letter-spacing:.5px;}
+  .topbar .dot{color:var(--green);}
+  .topbar b{color:var(--green);}
+  h1{font-size:23px;margin:22px 0 4px;color:#eafff7;letter-spacing:1px;}
+  h1 .tag{font-size:10px;background:var(--green-glow);color:var(--green);border:1px solid var(--green-dim);
+    padding:2px 8px;border-radius:20px;vertical-align:middle;margin-left:8px;}
+  .sub{color:var(--txt-dim);font-size:13px;margin:0 0 18px;}
+  h2{font-size:15px;color:var(--green);border-left:3px solid var(--green);padding-left:10px;margin:30px 0 12px;}
+  h3{font-size:13.5px;color:#eafff7;margin:14px 0 6px;}
+  .panel{border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:14px 16px;margin:12px 0;}
+  .panel.warn{border-color:#3a2e16;background:linear-gradient(180deg,#1a150c,#120f08);}
+  .panel.red{border-color:#3a1a16;background:linear-gradient(180deg,#1a0c0c,#120808);}
+  .panel.blue{border-color:#16303a;background:linear-gradient(180deg,#0c1820,#0a1318);}
+
+  /* 表格 */
+  table{width:100%;border-collapse:collapse;margin:8px 0;font-size:12.5px;}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top;}
+  th{background:var(--panel-2);color:var(--green);font-weight:600;white-space:nowrap;}
+  td{color:var(--txt);}
+  tr:nth-child(even) td{background:rgba(46,230,166,.03);}
+
+  /* 清单项 */
+  .checklist{list-style:none;padding:0;margin:8px 0;}
+  .checklist li{padding:9px 0 9px 28px;position:relative;border-bottom:1px dashed var(--line);font-size:13px;}
+  .checklist li:last-child{border-bottom:none;}
+  .checklist li::before{content:"☐";position:absolute;left:0;color:var(--txt-dim);font-size:16px;top:7px;}
+
+  /* 坑 */
+  .pit{counter-increment:p;padding:10px 0 10px 36px;position:relative;border-bottom:1px dashed var(--line);}
+  .pit:last-child{border-bottom:none;}
+  .pit{border:1px solid var(--line);border-radius:8px;background:var(--panel-2);padding:11px 14px;margin:10px 0;}
+  .pit h4{margin:0 0 5px;color:var(--warn);font-size:13px;}
+  .pit .sev{float:right;font-size:11px;padding:1px 7px;border-radius:10px;background:var(--green-glow);color:var(--green);}
+  .pit .sev.high{background:#2a1412;color:var(--bad);}
+  .pit .sev.mid{background:#1a180c;color:var(--warn);}
+  .pit p{margin:4px 0;font-size:12.5px;color:var(--txt-dim);}
+  .pit .fix{font-size:12px;color:var(--txt);border-left:2px solid var(--green);padding-left:8px;margin:6px 0 0;}
+
+  .kbd{background:#0a0f12;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--green);font-size:12px;}
+
+  /* 决策树 */
+  .tree{margin:10px 0;}
+  .tree .node{border:1px solid var(--line);border-radius:8px;background:var(--panel-2);padding:9px 12px;margin:6px 0;font-size:12.5px;}
+  .tree .node .q{color:var(--warn);}
+  .tree .node .a{color:var(--green);}
+
+  footer{margin-top:28px;border-top:1px solid var(--line);padding-top:12px;color:var(--txt-dim);font-size:11.5px;text-align:center;}
+
+  .note{font-size:12px;color:var(--txt-dim);border-left:2px solid var(--warn);padding-left:10px;margin:8px 0;}
+  .note.green{border-color:var(--green);}
+  .note.red{border-color:var(--bad);}
+
+  .stat{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0;}
+  .stat .item{flex:1;min-width:130px;border:1px solid var(--line);border-radius:8px;background:var(--panel-2);padding:9px 11px;}
+  .stat .item .n{font-size:17px;color:var(--green);font-weight:700;}
+  .stat .item .l{font-size:11px;color:var(--txt-dim);}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><span class="dot">●</span> 技术清单 / TECH_CHECKLIST</span>
+  <span>关联 <b>河南方言语音板</b> · 路线 <b>云端 API（MVP）</b></span>
+</div>
+
+<h1>技术选型 &amp; 踩坑清单<span class="tag">开干前看完</span></h1>
+<p class="sub">把即将遇到的账号、依赖、配额、坑全部列清楚。采用 <b style="color:var(--green)">云端 API 路线</b>（讯飞+大模型），这是最快出 MVP 的方式。</p>
+
+<h2>📋 第一步：账号注册清单</h2>
+<table>
+  <tr><th>服务</th><th>用途</th><th>注册地址</th><th>需要</th><th>预估耗时</th></tr>
+  <tr>
+    <td>讯飞开放平台</td>
+    <td>方言语音识别（ASR）</td>
+    <td>console.xfyun.cn</td>
+    <td>手机号注册 → 实名认证 → 创建"WebAPI"应用 → 添加<b>语音听写（流式版）</b>服务 → 拿到 APPID + APIKey + APISecret</td>
+    <td>15–30 min</td>
+  </tr>
+  <tr>
+    <td>大模型 API（二选一）</td>
+    <td>翻译/拼音/释义/文案</td>
+    <td>DeepSeek / 通义千问 / 智谱</td>
+    <td>注册账号 → 创建 API Key。推荐 <b>DeepSeek</b>（便宜、中文强）或 <b>通义千问</b>（阿里系、有免费额度）</td>
+    <td>10 min</td>
+  </tr>
+  <tr>
+    <td>GitHub</td>
+    <td>代码托管 / 项目列表</td>
+    <td>github.com</td>
+    <td>注册账号 → 建空仓库</td>
+    <td>5 min（已有账号则跳过）</td>
+  </tr>
+  <tr>
+    <td>（可选）百度智能云</td>
+    <td>备选 ASR（讯飞失效时）</td>
+    <td>console.bce.baidu.com</td>
+    <td>注册 → 实名 → 开通语音识别 → 免费额度</td>
+    <td>15 min</td>
+  </tr>
+</table>
+
+<div class="stat">
+  <div class="item"><div class="n">3–4 个</div><div class="l">需注册的账号</div></div>
+  <div class="item"><div class="n">30–50 分钟</div><div class="l">注册+实名总耗时</div></div>
+  <div class="item"><div class="n">0 元</div><div class="l">MVP 阶段费用</div></div>
+</div>
+
+<h2>📦 第二步：技术依赖清单</h2>
+<table>
+  <tr><th>依赖</th><th>版本</th><th>安装方式</th><th>用途</th><th>必装？</th></tr>
+  <tr>
+    <td>Python 3.10+</td>
+    <td>3.10~3.12</td>
+    <td>已有（你电脑上有 Python 3.12）</td>
+    <td>后端代理（保护 API Key）</td>
+    <td class="yes">✔ 推荐</td>
+  </tr>
+  <tr>
+    <td>Flask / FastAPI</td>
+    <td>latest</td>
+    <td><span class="kbd">pip install flask</span></td>
+    <td>轻量后端服务器</td>
+    <td class="yes">✔</td>
+  </tr>
+  <tr>
+    <td>讯飞 WebSocket SDK</td>
+    <td>—</td>
+    <td>手动下载（官方提供 Python demo）</td>
+    <td>接入讯飞语音识别</td>
+    <td class="yes">✔</td>
+  </tr>
+  <tr>
+    <td>requests</td>
+    <td>—</td>
+    <td><span class="kbd">pip install requests</span></td>
+    <td>调用大模型 API</td>
+    <td class="yes">✔</td>
+  </tr>
+  <tr>
+    <td>FFmpeg</td>
+    <td>latest</td>
+    <td>winget / 官网下载，加 PATH</td>
+    <td>音频转码（16kHz/单声道/WAV）</td>
+    <td class="yes">✔ 强烈推荐</td>
+  </tr>
+  <tr>
+    <td>浏览器 (Chrome/Edge)</td>
+    <td>—</td>
+    <td>已有</td>
+    <td><span class="kbd">getUserMedia</span> 录音 + 预览</td>
+    <td class="yes">✔</td>
+  </tr>
+</table>
+
+<div class="note green">💡 你的环境：已装 Python 3.12，直接 <span class="kbd">pip install flask requests</span> 即可开干。FFmpeg 可能需要单独装。</div>
+
+<h2>💰 第三步：免费额度与配额</h2>
+<table>
+  <tr><th>服务</th><th>免费额度</th><th>超量后费用</th><th>对你够用吗？</th></tr>
+  <tr>
+    <td>讯飞语音听写（流式）</td>
+    <td>每个新应用 <b>每日 500 次</b> 免费调用</td>
+    <td>约 2–3 元/千次（按时长计费）</td>
+    <td style="color:var(--green)">✅ MVP 阶段完全够用（日均试听几十次）</td>
+  </tr>
+  <tr>
+    <td>DeepSeek API</td>
+    <td>注册送 500 万 tokens（约够用很久）</td>
+    <td>¥1/百万 tokens（极便宜）</td>
+    <td style="color:var(--green)">✅ MVP 阶段几乎用不完</td>
+  </tr>
+  <tr>
+    <td>通义千问 API</td>
+    <td>免费额度 100 万 tokens/月</td>
+    <td>¥2/百万 tokens</td>
+    <td style="color:var(--green)">✅ 同样够用</td>
+  </tr>
+  <tr>
+    <td>智谱 API</td>
+    <td>注册送额度</td>
+    <td>¥1~2/百万 tokens</td>
+    <td style="color:var(--green)">✅ 可作为备选</td>
+  </tr>
+  <tr>
+    <td>百度语音识别</td>
+    <td>每月赠送一定调用次数（宣传称"免费"）</td>
+    <td>按次/按时长计费</td>
+    <td style="color:var(--mid)">⚠ 备选，免费用完可能需付费</td>
+  </tr>
+</table>
+
+<div class="panel blue">
+  <h3 style="margin-top:0">💸 费用估算（MVP 阶段）</h3>
+  <p style="font-size:13px;margin:4px 0;color:var(--txt)">假设测试 50 条方言录音：</p>
+  <div class="feat" style="display:flex;gap:8px;align-items:flex-start;padding:4px 0;font-size:12.5px;">
+    <span class="ic" style="color:var(--green)">▸</span>
+    <div>讯飞 ASR：50 次调用 → 免费（500 次/天额度内） → <b style="color:var(--green)">¥0</b></div>
+  </div>
+  <div class="feat" style="display:flex;gap:8px;align-items:flex-start;padding:4px 0;font-size:12.5px;">
+    <span class="ic" style="color:var(--green)">▸</span>
+    <div>大模型释义：50 次 × 约 500 tokens/次 = 25K tokens → 免费或 ≈ <b style="color:var(--green)">¥0.05</b></div>
+  </div>
+  <div class="feat" style="display:flex;gap:8px;align-items:flex-start;padding:4px 0;font-size:12.5px;">
+    <span class="ic" style="color:var(--green)">▸</span>
+    <div><b>总计：≈ 0 元。项目做完大概率 0 支出。</b></div>
+  </div>
+</div>
+
+<h2>⚠️ 第四步：常见踩坑（必看！）</h2>
+
+<div class="pit">
+  <span class="sev high">🔴 致命</span>
+  <h4>💣 坑 1：API Key 写在前端代码里</h4>
+  <p>你用单文件 HTML 时，最容易的做法是 JS 里直接写 APPID/APIKey，但浏览器打开后任何人按 F12 都能看到你的密钥，然后盗用你的额度。更糟的是讯飞/DeepSeek 的 Key 被盗后可能被刷爆产生账单。</p>
+  <div class="fix">✅ <b>解决</b>：搭一个极简 Python 后端（Flask 10 行代码）当代理。前端只向后端发请求，后端带 Key 调外部 API。或者用 Cloudflare Worker / Vercel Serverless / 阿里云函数计算做无服务器代理。</div>
+</div>
+
+<div class="pit">
+  <span class="sev high">🔴 致命</span>
+  <h4>💣 坑 2：音频格式不规范导致识别失败 / 乱码</h4>
+  <p>讯飞要求音频：采样率 <b>16kHz</b>，位深 <b>16bit</b>，<b>单声道</b>，编码 <b>PCM (WAV)</b>。浏览器 getUserMedia 默认录出来的可能是 48kHz、立体声或不支持的格式——直接发过去会识别出完全不对的东西，甚至报错。</p>
+  <div class="fix">✅ <b>解决</b>：在 JS 端录完音频后，用 <span class="kbd">AudioContext</span> 重采样到 16kHz/单声道，导出 WAV；或在 Python 后端用 <span class="kbd">FFmpeg</span> 自动转码。<br>
+  FFmpeg 标准命令：<span class="kbd">ffmpeg -i input.wav -ar 16000 -ac 1 -acodec pcm_s16le output.wav</span></div>
+</div>
+
+<div class="pit">
+  <span class="sev high">🔴 致命</span>
+  <h4>💣 坑 3：讯飞 WebSocket 鉴权签名算错</h4>
+  <p>讯飞语音听写用 WebSocket 连接，需要你把 APIKey + APISecret + 时间戳按 HMAC-SHA256 算法算出一个签名（authorization 参数）。这个签名字符串拼接格式、base64 编码、日期格式差一个字符就连不上——报 401/400 且错误信息很模糊，新手常在这卡半天。</p>
+  <div class="fix">✅ <b>解决</b>：讯飞官方提供 Python/Java/JS demo，<b>直接用官方 demo 改</b>，不要自己从头写 signature。官网文档目录 → SDK下载 → 语音听写流式版 → Python demo 即可下载。<br>
+  如果报错 10110 / 10113 / 11200，先检查：① APIKey/APISecret 是否正确复制（注意空格）；② 系统时间是否准确（偏差 > 5 分钟会失败）。</div>
+</div>
+
+<div class="pit">
+  <span class="sev mid">🟡 中等</span>
+  <h4>💣 坑 4：方言识别结果不如想象中准</h4>
+  <p>讯飞/百度确实支持河南话方言识别，但准确率≠100%，尤其是：① 生僻/老旧方言词（如"夜儿个""得劲儿"）可能识别成相近普通话；② 口音太重的长辈录音效果偏差；③ 混合中英文的句子可能分裂。</p>
+  <div class="fix">✅ <b>解决</b>：① 用 LLM 做二次纠错（把 ASR 结果发给大模型让"修正为正确的方言字"）；② 界面标注"仅供参考"降低预期；③ 长期积累自己的方言词库 JSON 做热词修正（讯飞支持上传热词表）。</div>
+</div>
+
+<div class="pit">
+  <span class="sev mid">🟡 中等</span>
+  <h4>💣 坑 5：大模型"幻觉"编造方言释义</h4>
+  <p>LLM 会自信满满地把一个方言词解释得头头是道，但可能是瞎编的。比如"得劲儿"它有正确说法，但生僻词如"枯楚"（河南话"皱"的意思）可能会胡说。</p>
+  <div class="fix">✅ <b>解决</b>：① 提示词加一句"如果你不确定，请如实说'不确定'"；② 在界面上标明"释义由 AI 生成，仅供参考"；③ 长期方案：人工校对 + 沉淀可信词库。</div>
+</div>
+
+<div class="pit">
+  <span class="sev mid">🟡 中等</span>
+  <h4>💣 坑 6：浏览器 getUserMedia 录音限制</h4>
+  <p>第一次打开页面，浏览器会弹"是否允许使用麦克风"权限框——如果用户点"禁止"或没注意到，录音功能直接废掉，没有任何明确报错。移动端部分浏览器还不支持 getUserMedia。</p>
+  <div class="fix">✅ <b>解决</b>：① 页面加明显的"请允许麦克风权限"引导卡片；② 检测权限状态（<span class="kbd">navigator.permissions.query({name:'microphone'})</span>）；③ 同时支持"上传音频文件"作为备选方案（不依赖麦克风）。</div>
+</div>
+
+<div class="pit">
+  <span class="sev mid">🟡 中等</span>
+  <h4>💣 坑 7：讯飞每日 500 次用完就停</h4>
+  <p>调试阶段你可能会反复上传同一条录音来测试——一次上传、多次调用 ASR API，500 次额度其实不禁用。超量后直接返回错误（错误码 11200+），没有任何降级。</p>
+  <div class="fix">✅ <b>解决</b>：① 前端做防重复：同一条录音结果缓存到 localStorage，不重复调 API；② 后端加日志记调用次数，快用完时预警；③ 注册时绑定支付宝/微信实名可申请更多免费额度。</div>
+</div>
+
+<h2>🧭 第五步：技术决策树</h2>
+<p class="sub" style="margin-top:-6px">搭后端代理时，按你的条件走哪条路：</p>
+<div class="tree">
+  <div class="node"><span class="q">❓ 你会 Python 吗？</span> → <span class="a">会 → Flask 后端最简单</span></div>
+  <div class="node"><span class="q">├─ 只想用纯前端？</span> → <span class="a">可以但必须用 Cloudflare Worker / 腾讯云函数等 Serverless 做代理，不能前端硬编码 Key</span></div>
+  <div class="node"><span class="q">├─ 要本地跑还是部署到公网？</span> → <span class="a">本地：Flask 跑 <span class="kbd">localhost</span> → 部署：推荐 Vercel（免费、省事）</span></div>
+  <div class="node"><span class="q">├─ FFmpeg 没装？</span> → <span class="a">装一个：<span class="kbd">winget install ffmpeg</span> 或官网下载扔进 PATH</span></div>
+  <div class="node"><span class="q">└─ 大模型选哪家？</span> → <span class="a">DeepSeek（最便宜+中文好）或通义千问（有免费额度）</span></div>
+</div>
+
+<h2>✅ 第六步：启动前检查表（对照打勾）</h2>
+<ul class="checklist">
+  <li>讯飞开放平台已注册、已实名、已创建应用并拿到 APPID / APIKey / APISecret</li>
+  <li>大模型 API（DeepSeek/通义千问）已注册并拿到 API Key</li>
+  <li>已安装 <span class="kbd">flask</span> 和 <span class="kbd">requests</span>（<span class="kbd">pip install flask requests</span>）</li>
+  <li>FFmpeg 已安装并在终端可用（<span class="kbd">ffmpeg --version</span> 不报错）</li>
+  <li>已下载讯飞官方语音听写 Python demo（官网 → 文档 → SDK下载）</li>
+  <li>已跑通讯飞 demo 的"一句话识别"（确保鉴权成功）</li>
+  <li>已跑通大模型 API 的"Hello World"（确保 Key 有效）</li>
+  <li>前端录音方案已确定（getUserMedia + AudioContext 重采样 / 或上传文件）</li>
+  <li>API Key 存储方案已确定（放在后端 .env 或环境变量，不提交到 GitHub）</li>
+</ul>
+
+<h2>🔗 重要链接速查</h2>
+<table>
+  <tr><th>资源</th><th>链接</th></tr>
+  <tr><td>讯飞开放平台控制台</td><td><span style="color:var(--blue)">console.xfyun.cn</span></td></tr>
+  <tr><td>讯飞语音听写 API 文档</td><td><span style="color:var(--blue)">xfyun.cn/doc/asr/voicedictation/API.html</span></td></tr>
+  <tr><td>讯飞 Python Demo 下载</td><td>控制台 → 语音听写(流式版) → SDK下载 → Python</td></tr>
+  <tr><td>DeepSeek API 控制台</td><td><span style="color:var(--blue)">platform.deepseek.com</span></td></tr>
+  <tr><td>通义千问 API 控制台</td><td><span style="color:var(--blue)">dashscope.aliyun.com</span></td></tr>
+  <tr><td>FFmpeg 下载</td><td><span style="color:var(--blue)">ffmpeg.org/download.html</span></td></tr>
+  <tr><td>GitHub 新建仓库</td><td><span style="color:var(--blue)">github.com/new</span></td></tr>
+</table>
+
+<div class="panel warn" style="margin-top:18px">
+  <h3 style="margin-top:0;color:var(--warn)">🛡 安全红线（必读）</h3>
+  <p style="font-size:13px;margin:4px 0;color:var(--txt)">
+  ① 任何时候 <b style="color:var(--bad)">不要</b> 把 APPID / APIKey / APISecret 提交到 GitHub 公开仓库。用 <span class="kbd">.env</span> 文件 + <span class="kbd">.gitignore</span> 隔离。<br>
+  ② 后端代理只接受可信域名的请求，防止被他人盗用你的 API 额度。<br>
+  ③ 如果你要用纯前端方案（不搭后端），只能用 Serverless 函数做代理——<b style="color:var(--bad)">永远不要</b>在前端 JS 里硬编码 API Key。
+  </p>
+</div>
+
+<footer>
+  TECH_CHECKLIST · 云端 API 路线（MVP）· 2026-07-07 · 数据经 WebSearch 核实<br>
+  提供方：讯飞 xfyun.cn · DeepSeek · 百度智能云 · FFmpeg（开源）· GitHub
+</footer>
+
+</body>
+</html>

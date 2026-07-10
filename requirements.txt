@@ -1,0 +1,17 @@
+# 河南方言语音板 - 桌面应用依赖（PySide6 纯原生 GUI）
+# 安装：pip install -r requirements.txt
+# 版本已锁定（2026-07-07 实测可成功打包并运行）；如需升级请先隔离环境验证后再改此处
+
+# —— 桌面 GUI（必装）——
+PySide6==6.11.1          # Qt 官方 Python 绑定（LGPL，适合发布）
+sounddevice==0.5.5      # 麦克风录音
+numpy==2.4.6            # 录音数据处理 / 音量计算
+
+# —— 后端逻辑 ——
+python-dotenv==1.2.2    # 从 .env 读取 API Key（不提交到仓库）
+requests==2.34.2        # 调用大模型 HTTP API
+websocket-client==1.9.0 # 讯飞语音听写 WebSocket 客户端
+pypinyin==0.55.0        # 演示模式下的拼音生成（无 LLM Key 时兜底）
+
+# 本地离线识别（FunASR）为可选功能，单独列在 requirements-offline.txt
+# 演示 / 云端模式无需安装它；启用离线识别再装。
